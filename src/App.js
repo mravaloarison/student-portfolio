@@ -1,38 +1,26 @@
-import { Card, CardContent, Typography, Stack, Button } from "@mui/joy";
-import { Select, Option } from "@mui/joy";
-import { useState } from "react";
+import { Card, CardContent, Typography, Stack } from "@mui/joy";
 import Contact from "./components/Contact";
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
 
 function App() {
-	const [color, setColor] = useState("none");
-
-	const ListOfColors = ["primary", "warning", "success"];
-
 	return (
 		<Stack
 			direction="column"
-			spacing={2}
+			spacing={{ xs: 2, sm: 4 }}
 			sx={{
 				justifyContent: "center",
 				alignItems: "center",
-				padding: 4,
+				padding: { xs: 2, sm: 4 },
 			}}
 		>
 			<Contact />
-
-			<Card variant="soft" color="#ddd6fe">
-				<CardContent>
-					<Typography level="title-md">Soft card</Typography>
-					<Typography>Description of the card.</Typography>
-				</CardContent>
-			</Card>
-
-			<Card variant="soft">
-				<CardContent>
-					<Typography level="title-md">Soft card</Typography>
-					<Typography>Description of the card.</Typography>
-				</CardContent>
-			</Card>
+			<AboutMe />
+			<Projects />
+			<Typography level="body-xs">
+				{" "}
+				© By Rava <span className="noto-emoji">🦮</span>{" "}
+			</Typography>
 		</Stack>
 	);
 }

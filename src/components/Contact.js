@@ -1,17 +1,29 @@
 import { Card, CardContent, Typography, Box, Button, Link } from "@mui/joy";
-import ArticleIcon from "@mui/icons-material/Article";
-import AttachFileIcon from "@mui/icons-material/AttachFile";
 import DownloadResume from "./DownloadResume";
 
 export default function Contact() {
+	const socialMedias = [
+		{
+			icon: "https://img.icons8.com/?size=100&id=59813&format=png&color=000000",
+			link: "https://www.instagram.com/mami_rvl/?hl=en",
+		},
+		{
+			icon: "https://img.icons8.com/?size=100&id=98960&format=png&color=000000",
+			link: "https://www.linkedin.com/in/mravaloarison/",
+		},
+		{
+			icon: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
+			link: "https://github.com/mravaloarison",
+		},
+	];
+
 	return (
 		<div>
 			<Card
 				variant="soft"
-				color="#9923"
+				color="#"
 				sx={{
-					maxWidth: 630,
-					width: "100%",
+					width: { xs: "100%", sm: "630px" },
 				}}
 			>
 				<Box
@@ -22,12 +34,21 @@ export default function Contact() {
 					}}
 				>
 					<CardContent>
-						<Typography level="h3" sx={{ pb: 2 }}>
+						<Typography level="h3" sx={{ pb: { xs: 2, sm: 4 } }}>
 							Maminiaina Ravalorison
 						</Typography>
 
 						<Typography level="body-sm">
-							Jr. Software Engineer and 7 x Hackathon Winner
+							Jr. Software Developer and{" "}
+							<span>
+								<Link
+									href="https://devpost.com/mrava?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+									variant="outlined"
+									underline="always"
+								>
+									7 x Hackathon Winner
+								</Link>
+							</span>
 						</Typography>
 					</CardContent>
 
@@ -36,9 +57,7 @@ export default function Contact() {
 							display: "flex",
 							flexDirection: "column",
 							justifyContent: "space-between",
-							// on small screen: height: "146px"
-							height: "116px",
-
+							height: { sm: "117px", xs: "150px" },
 							alignItems: "end",
 						}}
 					>
@@ -49,41 +68,24 @@ export default function Contact() {
 						<Box
 							sx={{
 								display: "flex",
-								gap: 2,
+								gap: 1,
 								justifyContent: "end",
 								alignItems: "center",
 							}}
 						>
-							<Link
-								startDecorator={
-									<img
-										width="28"
-										height="28"
-										src="https://img.icons8.com/?size=300&id=DpOQ6G5p47f0&format=png&color=000000"
-									/>
-								}
-								href="https://www.instagram.com/mami_rvl/?hl=en"
-							/>
-							<Link
-								startDecorator={
-									<img
-										width="28"
-										height="28"
-										src="https://img.icons8.com/?size=300&id=uzhJQ5CyNoaH&format=png&color=000000"
-									/>
-								}
-								href="https://www.linkedin.com/in/mravaloarison/"
-							/>
-							<Link
-								startDecorator={
-									<img
-										width="28"
-										height="28"
-										src="https://img.icons8.com/?size=100&id=zuHqpgzrusU5&format=png&color=000000"
-									/>
-								}
-								href="https://github.com/mravaloarison"
-							/>
+							{socialMedias.map((socialMedia) => (
+								<Link
+									key={socialMedia.link}
+									startDecorator={
+										<img
+											width="23"
+											height="23"
+											src={socialMedia.icon}
+										/>
+									}
+									href={socialMedia.link}
+								/>
+							))}
 						</Box>
 					</CardContent>
 				</Box>
