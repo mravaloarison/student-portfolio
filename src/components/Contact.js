@@ -11,6 +11,7 @@ export default function Contact() {
 				color=""
 				sx={{
 					width: { xs: "100%", sm: "630px" },
+					padding: { xs: 2, sm: 4 },
 				}}
 			>
 				<Box

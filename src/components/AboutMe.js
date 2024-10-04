@@ -24,6 +24,7 @@ export default function AboutMe() {
 					maxWidth: 630,
 					width: "100%",
 					backgroundColor: "success.50",
+					padding: { xs: 2, sm: 4 },
 				}}
 			>
 				<CardContent>
@@ -35,9 +36,9 @@ export default function AboutMe() {
 							justifyContent: "space-between",
 						}}
 					>
-						<Typography level="h4">
+						<Typography level="title-lg">
 							I am a fun guy, a Developer, a Dog Lover, and a
-							Musician
+							Musician.
 						</Typography>
 						<div>
 							<Button

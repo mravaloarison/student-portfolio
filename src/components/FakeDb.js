@@ -1,5 +1,41 @@
 export const ListOfTechnologies = [
 	{
+		name: "API",
+		icon: "https://img.icons8.com/?size=100&id=Ov4kJCn8JtAH&format=png&color=000000",
+	},
+	{
+		name: "Firestore",
+		icon: "https://img.icons8.com/?size=100&id=SQEEoDcpUD6c&format=png&color=000000",
+	},
+	{
+		name: "PostgreSQL",
+		icon: "https://img.icons8.com/?size=100&id=38561&format=png&color=000000",
+	},
+	{
+		name: "C#",
+		icon: "https://img.icons8.com/?size=100&id=mhwmyz1eu7T5&format=png&color=000000",
+	},
+	{
+		name: "Visual Studio",
+		icon: "https://img.icons8.com/?size=100&id=ezj3zaVtImPg&format=png&color=000000",
+	},
+	{
+		name: ".NET Maui",
+		icon: "https://img.icons8.com/?size=100&id=1BC75jFEBED6&format=png&color=000000",
+	},
+	{
+		name: "XCode",
+		icon: "https://img.icons8.com/?size=100&id=51974&format=png&color=000000",
+	},
+	{
+		name: "Swift",
+		icon: "https://img.icons8.com/?size=100&id=24465&format=png&color=000000",
+	},
+	{
+		name: "SwiftUI",
+		icon: "https://img.icons8.com/?size=100&id=3cCrxzZF7LfB&format=png&color=000000",
+	},
+	{
 		name: "Flask",
 		icon: "https://img.icons8.com/?size=100&id=MHcMYTljfKOr&format=png&color=000000",
 	},
@@ -81,6 +117,39 @@ export const ListOfProjects = [
 		description:
 			"My personal portfolio website, built with React and hosted on Github Pages.",
 		technologies: ["Github", "React"],
+	},
+	{
+		name: "Wallet",
+		description:
+			"This is a simple .NET MAUI application that checks if a credit card number is valid and identifies its type (Visa, MasterCard, Amex or Unknown), originally a project for C from Harvard CS50x.",
+		technologies: ["Visual Studio", ".NET Maui", "C#"],
+		link: "https://github.com/mravaloarison/wallet",
+	},
+	{
+		name: "My First Web App",
+		description:
+			"An app that allows users to create, read, update, and delete passwords.",
+		technologies: ["Flask", "Python", "Javascript", "PostgreSQL"],
+		link: "https://github.com/mravaloarison/passwave",
+	},
+	{
+		name: "First time using Firestore",
+		description:
+			"A bookstore app to test out Firebase Auth and Firestore. It also integragted the Gemini API as I wanted to try it out using Typescript (I usually use Python for Backend) for the first the time.",
+		technologies: [
+			"Firebase Auth",
+			"Firestore",
+			"Typescript",
+			"Gemini API",
+		],
+		link: "https://bookbridge-app-gray.vercel.app/",
+	},
+	{
+		name: "My First iOS App",
+		description:
+			"A simple app that displays a list of my favorite movies and their details.",
+		technologies: ["XCode", "Swift", "SwiftUI"],
+		link: "",
 	},
 ];
 

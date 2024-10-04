@@ -4,7 +4,7 @@ import { ListOfProjects } from "./FakeDb";
 import ProjectHeader from "./ProjectHeader";
 
 export default function Projects() {
-	const LOP = ListOfProjects;
+	const LOP = ListOfProjects.slice(0, 4);
 
 	return (
 		<div>
@@ -14,12 +14,13 @@ export default function Projects() {
 				sx={{
 					maxWidth: 630,
 					backgroundColor: "primary.50",
+					padding: { xs: 2, sm: 4 },
 				}}
 			>
 				<CardContent>
 					<ProjectHeader />
 					<Box mt={2}>
-						<Grid container spacing={{ sm: 2, xs: 4 }}>
+						<Grid container spacing={4}>
 							{LOP.map((project) => (
 								<ProjectElement
 									key={project.name}
