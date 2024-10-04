@@ -1,27 +1,14 @@
-import { Card, CardContent, Typography, Box, Button, Link } from "@mui/joy";
+import { Card, CardContent, Typography, Box, Link } from "@mui/joy";
 import DownloadResume from "./DownloadResume";
+import SocialMedia from "./SocialMedia";
+import Profile from "./Profile";
 
 export default function Contact() {
-	const socialMedias = [
-		{
-			icon: "https://img.icons8.com/?size=100&id=59813&format=png&color=000000",
-			link: "https://www.instagram.com/mami_rvl/?hl=en",
-		},
-		{
-			icon: "https://img.icons8.com/?size=100&id=98960&format=png&color=000000",
-			link: "https://www.linkedin.com/in/mravaloarison/",
-		},
-		{
-			icon: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
-			link: "https://github.com/mravaloarison",
-		},
-	];
-
 	return (
 		<div>
 			<Card
 				variant="soft"
-				color="#"
+				color=""
 				sx={{
 					width: { xs: "100%", sm: "630px" },
 				}}
@@ -33,25 +20,7 @@ export default function Contact() {
 						alignItems: "start",
 					}}
 				>
-					<CardContent>
-						<Typography level="h3" sx={{ pb: { xs: 2, sm: 4 } }}>
-							Maminiaina Ravalorison
-						</Typography>
-
-						<Typography level="body-sm">
-							Jr. Software Developer and{" "}
-							<span>
-								<Link
-									href="https://devpost.com/mrava?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-									variant="outlined"
-									underline="always"
-								>
-									7 x Hackathon Winner
-								</Link>
-							</span>
-						</Typography>
-					</CardContent>
-
+					<Profile />
 					<CardContent
 						sx={{
 							display: "flex",
@@ -64,29 +33,7 @@ export default function Contact() {
 						<div>
 							<DownloadResume />
 						</div>
-
-						<Box
-							sx={{
-								display: "flex",
-								gap: 1,
-								justifyContent: "end",
-								alignItems: "center",
-							}}
-						>
-							{socialMedias.map((socialMedia) => (
-								<Link
-									key={socialMedia.link}
-									startDecorator={
-										<img
-											width="23"
-											height="23"
-											src={socialMedia.icon}
-										/>
-									}
-									href={socialMedia.link}
-								/>
-							))}
-						</Box>
+						<SocialMedia />
 					</CardContent>
 				</Box>
 			</Card>
