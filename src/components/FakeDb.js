@@ -198,7 +198,7 @@ export const AboutMeSections = [
 	},
 	{
 		emoji: "🌍",
-		text: "With a keen interest in machine learning and AR/VR, I also love animals and aspire to use my skills to protect the environment and wildlife.",
+		text: "With a keen interest in Machine Learning, AR and VR, I also love animals and aspire to use my skills to protect the environment and wildlife.",
 	},
 	{
 		emoji: "💻",
