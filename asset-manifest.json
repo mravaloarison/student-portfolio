@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mravaloarison/mravaloarison.github.io/static/css/main.a8ea99ab.css",
+    "main.js": "/mravaloarison/mravaloarison.github.io/static/js/main.bddea381.js",
+    "index.html": "/mravaloarison/mravaloarison.github.io/index.html",
+    "main.a8ea99ab.css.map": "/mravaloarison/mravaloarison.github.io/static/css/main.a8ea99ab.css.map",
+    "main.bddea381.js.map": "/mravaloarison/mravaloarison.github.io/static/js/main.bddea381.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8ea99ab.css",
+    "static/js/main.bddea381.js"
+  ]
+}
