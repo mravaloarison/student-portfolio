@@ -6,7 +6,7 @@ export default function ProjectElement({ name, description, technologies }) {
 	const LOT = ListOfTechnologies;
 
 	return (
-		<Grid item xs={12} sm={6}>
+		<Grid xs={12} sm={6}>
 			<Stack
 				direction="row"
 				spacing={1}
@@ -18,7 +18,7 @@ export default function ProjectElement({ name, description, technologies }) {
 					<Technology
 						key={technology}
 						name={technology}
-						icon={LOT.find((tech) => tech.name === technology).icon}
+						icon={LOT.find((el) => el.name === technology).icon}
 					/>
 				))}
 			</Stack>

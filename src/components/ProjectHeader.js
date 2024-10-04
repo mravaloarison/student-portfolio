@@ -6,13 +6,7 @@ import DrawerProjects from "./DrawerProjects";
 export default function ProjectHeader() {
 	const [open, setOpen] = useState(false);
 
-	const toggleDrawer = (inOpen) => (event) => {
-		if (
-			event.type === "keydown" &&
-			(event.key === "Tab" || event.key === "Shift")
-		) {
-			return;
-		}
+	const toggleDrawer = (inOpen) => () => {
 		setOpen(inOpen);
 	};
 

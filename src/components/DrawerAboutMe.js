@@ -4,6 +4,7 @@ import { AboutMeSections } from "./FakeDb";
 
 export default function DrawerAboutMe({ open, toggleDrawer }) {
 	const AMS = AboutMeSections;
+
 	return (
 		<Drawer open={open} onClose={toggleDrawer(false)} size="lg">
 			<ModalClose />
