@@ -194,18 +194,22 @@ export const SocialMedias = [
 export const AboutMeSections = [
 	{
 		emoji: "👋",
-		text: "Hello! I'm a student from Madagascar with a passion for software development. I'm actively seeking an internship or part-time job to gain more experience in the field.",
+		text: "Hello! I'm a student from Madagascar with a passion for software development. I'm currently seeking an internship or part-time job to gain more experience in the field.",
+	},
+	{
+		emoji: "🌍",
+		text: "With a keen interest in machine learning and AR/VR, I also love animals and aspire to use my skills to protect the environment and wildlife.",
 	},
 	{
 		emoji: "💻",
-		text: "I have a deep love for Hackathons. I find it very fun to collaborate with students and mentors who share the same interest in technology as me. Every Hackathon I attend to, I explore new stacks, which has made me a fast learner. Additionally, I enjoy helping others learn new things and learning from them in return.",
+		text: "I have a deep love for Hackathons. I find it exciting to collaborate with students and mentors who share my interest in technology. Each Hackathon I attend allows me to explore new tech stacks, making me a fast learner. Additionally, I enjoy helping others learn new things and learning from them in return.",
 	},
 	{
 		emoji: "🐶",
-		text: "If all jobs were paying the same, I would probably be a dog sitter or work in a dog shelter. I love dogs.",
+		text: "If all jobs paid the same, I would probably be a dog sitter or work in a dog shelter. I love dogs.",
 	},
 	{
 		emoji: "🎶",
-		text: "In my free time, I enjoy playing the guitar, bass, and piano (currently learning this one). You can check out some samples of my playing on my Instagram. (I'm also an avid chess player.)",
+		text: "In my free time, I enjoy playing the guitar, bass, and piano (currently learning this one). You can check out some samples of my playing on my Instagram. I'm also an avid chess player.",
 	},
 ];
