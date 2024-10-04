@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography, Box, Link } from "@mui/joy";
+import { Card, CardContent, Box } from "@mui/joy";
 import DownloadResume from "./DownloadResume";
 import SocialMedia from "./SocialMedia";
 import Profile from "./Profile";

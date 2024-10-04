@@ -1,15 +1,21 @@
-import {
-	Box,
-	Button,
-	Card,
-	CardContent,
-	Grid,
-	Stack,
-	Typography,
-} from "@mui/joy";
+import { Button, Card, CardContent, Stack, Typography } from "@mui/joy";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
+import React, { useState } from "react";
+import DrawerAboutMe from "./DrawerAboutMe";
 
 export default function AboutMe() {
+	const [open, setOpen] = useState(false);
+
+	const toggleDrawer = (inOpen) => (event) => {
+		if (
+			event.type === "keydown" &&
+			(event.key === "Tab" || event.key === "Shift")
+		) {
+			return;
+		}
+		setOpen(inOpen);
+	};
+
 	return (
 		<div>
 			<Card
@@ -38,27 +44,16 @@ export default function AboutMe() {
 								variant="soft"
 								color="success"
 								startDecorator={<ContactsOutlinedIcon />}
+								onClick={toggleDrawer(true)}
 							>
 								About
 							</Button>
 						</div>
 					</Stack>
-					{/* <Stack direction="row" spacing={3} pt={2}>
-						<Typography level="h1">
-							<p className="noto-emoji">😅</p>
-						</Typography>
-						<Typography level="h1">
-							<p className="noto-emoji">💻</p>
-						</Typography>
-						<Typography level="h1">
-							<p className="noto-emoji">🐶</p>
-						</Typography>
-						<Typography level="h1">
-							<p className="noto-emoji">🎸</p>
-						</Typography>
-					</Stack> */}
 				</CardContent>
 			</Card>
+
+			<DrawerAboutMe open={open} toggleDrawer={toggleDrawer} />
 		</div>
 	);
 }

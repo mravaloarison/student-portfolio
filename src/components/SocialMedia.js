@@ -17,7 +17,12 @@ export default function SocialMedia() {
 				<Link
 					key={socialMedia.link}
 					startDecorator={
-						<img width="23" height="23" src={socialMedia.icon} />
+						<img
+							width="23"
+							height="23"
+							src={socialMedia.icon}
+							alt="SM icon"
+						/>
 					}
 					href={socialMedia.link}
 					target="_blank"
