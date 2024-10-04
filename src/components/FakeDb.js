@@ -194,11 +194,11 @@ export const SocialMedias = [
 export const AboutMeSections = [
 	{
 		emoji: "👋",
-		text: "Hello! I'm a student from Madagascar with a passion for software development. I'm currently seeking an internship or part-time job to gain more experience in the field.",
+		text: "Hello! I'm a student from Madagascar with a passion for Software Engineering. I'm currently seeking an internship or part-time job to gain more experience in the field.",
 	},
 	{
-		emoji: "🌍",
-		text: "With a keen interest in Machine Learning, AR and VR, I also love animals and aspire to use my skills to protect the environment and wildlife.",
+		emoji: "🎯",
+		text: "I have experience developing AI, web, and mobile applications. At the moment, I'm learning Machine Learning, AR, and VR. And, because I love animals, I aspire to use my skills to protect the environment and wildlife.",
 	},
 	{
 		emoji: "💻",

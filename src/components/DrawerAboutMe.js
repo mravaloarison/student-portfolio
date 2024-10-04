@@ -17,7 +17,7 @@ export default function DrawerAboutMe({ open, toggleDrawer }) {
 					my={2}
 					maxWidth={513}
 					mx="auto"
-					pt={{ xs: 2, sm: 10, lg: 16 }}
+					pt={{ xs: 2, sm: 10, lg: 15 }}
 				>
 					<Stack spacing={2} overflow="auto">
 						{AMS.map((section, index) => (

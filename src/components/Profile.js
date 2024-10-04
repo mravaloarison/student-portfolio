@@ -8,7 +8,7 @@ export default function Profile() {
 			</Typography>
 
 			<Typography level="body-sm">
-				Jr. Software Developer and{" "}
+				Jr. Software Engineer and{" "}
 				<span>
 					<Link
 						href="https://devpost.com/mrava?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
