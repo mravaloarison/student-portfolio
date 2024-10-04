@@ -8,7 +8,7 @@ export default function SocialMedia() {
 		<Box
 			sx={{
 				display: "flex",
-				gap: 1,
+				gap: { xs: 2, sm: 3 },
 				justifyContent: "end",
 				alignItems: "center",
 			}}

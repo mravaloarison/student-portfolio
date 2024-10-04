@@ -37,8 +37,8 @@ export default function AboutMe() {
 						}}
 					>
 						<Typography level="title-lg">
-							I am a fun guy, a Developer, a Dog Lover, and a
-							Musician.
+							I am a fun guy, a developer, a dog Lover, and a
+							musician.
 						</Typography>
 						<div>
 							<Button

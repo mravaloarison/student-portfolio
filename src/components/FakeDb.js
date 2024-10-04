@@ -1,5 +1,9 @@
 export const ListOfTechnologies = [
 	{
+		name: "Amplify by AWS",
+		icon: "https://img.icons8.com/?size=100&id=33039&format=png&color=000000",
+	},
+	{
 		name: "API",
 		icon: "https://img.icons8.com/?size=100&id=Ov4kJCn8JtAH&format=png&color=000000",
 	},
@@ -100,6 +104,8 @@ export const ListOfProjects = [
 		description:
 			"A Chrome extension that explains any highlighted text based on its context within the webpage, offering clear, relevant insights for better understanding.",
 		technologies: ["Gemini API", "Chrome Extension API", "Python", "Flask"],
+		link: "",
+		github: null,
 	},
 	{
 		name: "Pollen Web app",
@@ -110,27 +116,18 @@ export const ListOfProjects = [
 			"Google Maps API",
 			"Firebase Auth",
 			"Typescript",
+			"Amplify by AWS",
 		],
+		link: "",
+		github: "https://github.com/mravaloarison/pollen_-ravaloarison",
 	},
 	{
 		name: "Student Porfolio",
 		description:
 			"My personal portfolio website, built with React and hosted on Github Pages.",
 		technologies: ["Github", "React"],
-	},
-	{
-		name: "Wallet",
-		description:
-			"This is a simple .NET MAUI application that checks if a credit card number is valid and identifies its type (Visa, MasterCard, Amex or Unknown), originally a project for C from Harvard CS50x.",
-		technologies: ["Visual Studio", ".NET Maui", "C#"],
-		link: "https://github.com/mravaloarison/wallet",
-	},
-	{
-		name: "My First Web App",
-		description:
-			"An app that allows users to create, read, update, and delete passwords.",
-		technologies: ["Flask", "Python", "Javascript", "PostgreSQL"],
-		link: "https://github.com/mravaloarison/passwave",
+		link: "",
+		github: "",
 	},
 	{
 		name: "First time using Firestore",
@@ -143,13 +140,39 @@ export const ListOfProjects = [
 			"Gemini API",
 		],
 		link: "https://bookbridge-app-gray.vercel.app/",
+		github: "https://github.com/mravaloarison/bookstore_app",
 	},
 	{
-		name: "My First iOS App",
+		name: "Nypc",
 		description:
-			"A simple app that displays a list of my favorite movies and their details.",
+			"This app was originally a Python app that sends automated email to users. The issue was, it needed to be run manually. Now that it is a web app, it can be run on a server and send emails automatically using Cron Jobs.",
+		technologies: ["Python", "Typescript", "Amplify by AWS"],
+		link: "https://main.dr80uwsjpr41h.amplifyapp.com/test",
+		github: "https://github.com/mravaloarison/nypc",
+	},
+	{
+		name: "Wallet",
+		description:
+			"This is a simple .NET MAUI application that checks if a credit card number is valid and identifies its type (Visa, MasterCard, Amex or Unknown), originally a project for C from Harvard CS50x.",
+		technologies: ["Visual Studio", ".NET Maui", "C#"],
+		link: null,
+		github: "https://github.com/mravaloarison/wallet",
+	},
+
+	{
+		name: "My First iOS App",
+		description: "A memory game using emojis to learn Swift and SwiftUI.",
 		technologies: ["XCode", "Swift", "SwiftUI"],
-		link: "",
+		link: null,
+		github: "https://github.com/mravaloarison/Memorize-CS193p/blob/main/CS193p/ContentView.swift",
+	},
+	{
+		name: "My First Web App",
+		description:
+			"An app that allows users to create, read, update, and delete passwords.",
+		technologies: ["Flask", "Python", "Javascript", "PostgreSQL"],
+		link: null,
+		github: "https://github.com/mravaloarison/passwave",
 	},
 ];
 
