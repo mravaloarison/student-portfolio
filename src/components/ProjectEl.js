@@ -1,9 +1,15 @@
 import { Button, Grid, Stack, Typography } from "@mui/joy";
 import { ListOfTechnologies } from "./FakeDb";
 import Technology from "./Technology";
+import { useState } from "react";
+
+import { Modal, Sheet, ModalClose } from "@mui/joy";
+import ModalProjectDetail from "./ModalProjectDetail";
 
 export default function ProjectElement({ name, description, technologies }) {
 	const LOT = ListOfTechnologies;
+
+	const [open, setOpen] = useState(false);
 
 	return (
 		<Grid xs={12} sm={6}>
@@ -22,7 +28,7 @@ export default function ProjectElement({ name, description, technologies }) {
 					/>
 				))}
 			</Stack>
-			<Button sx={{ px: 0 }} variant="link">
+			<Button sx={{ px: 0 }} variant="link" onClick={() => setOpen(true)}>
 				<Typography
 					level="title-md"
 					sx={{
@@ -33,6 +39,21 @@ export default function ProjectElement({ name, description, technologies }) {
 				</Typography>
 			</Button>
 			<Typography level="body-sm">{description}</Typography>
+
+			<Modal
+				aria-labelledby="close-modal-title"
+				open={open}
+				onClose={(_event, reason) => {
+					setOpen(false);
+				}}
+				sx={{
+					display: "flex",
+					alignItems: "center",
+					justifyContent: "center",
+				}}
+			>
+				<ModalProjectDetail name={name} />
+			</Modal>
 		</Grid>
 	);
 }

@@ -1,5 +1,13 @@
 export const ListOfTechnologies = [
 	{
+		name: "Giphy API",
+		icon: "https://img.icons8.com/?size=100&id=inqzpXURPvpn&format=png&color=000000",
+	},
+	{
+		name: "Adobe",
+		icon: "https://img.icons8.com/?size=100&id=118571&format=png&color=000000",
+	},
+	{
 		name: "Amplify by AWS",
 		icon: "https://img.icons8.com/?size=100&id=33039&format=png&color=000000",
 	},
@@ -98,14 +106,26 @@ export const ListOfProjects = [
 		name: "Flappy x ML",
 		description: "Flappy Bird using face detection to control the bird.",
 		technologies: ["MediaPipe", "Game dev", "Javascript"],
+		link: "https://mravaloarison.github.io/Flappy-x-ML/",
+		github: null,
+		video: "https://youtube.com/embed/EKD0_0bAun0",
+		screenshots: ["/flappy.png"],
+	},
+	{
+		name: "GeneReel",
+		description:
+			"An Adobe add-on that helps content creators build Reels and Shorts faster based on user input.",
+		technologies: ["Adobe", "Giphy API", "Flask", "Gemini API"],
 	},
 	{
 		name: "Smart Dictionary",
 		description:
 			"A Chrome extension that explains any highlighted text based on its context within the webpage, offering clear, relevant insights for better understanding.",
 		technologies: ["Gemini API", "Chrome Extension API", "Python", "Flask"],
-		link: "",
-		github: null,
+		link: null,
+		github: "https://github.com/mravaloarison/smart_dictionary",
+		video: "https://youtube.com/embed/1C7jKuk7I3I",
+		screenshots: ["/dictionary.png"],
 	},
 	{
 		name: "Pollen Web app",
@@ -116,18 +136,19 @@ export const ListOfProjects = [
 			"Google Maps API",
 			"Firebase Auth",
 			"Typescript",
-			"Amplify by AWS",
 		],
-		link: "",
+		link: null,
 		github: "https://github.com/mravaloarison/pollen_-ravaloarison",
+		vide: null,
+		screenshots: ["pollen1.png", "pollen2.png", "pollen3.png"],
 	},
 	{
 		name: "Student Porfolio",
 		description:
 			"My personal portfolio website, built with React and hosted on Github Pages.",
 		technologies: ["Github", "React"],
-		link: "",
-		github: "",
+		link: "https://mravaloarison.github.io/student-portfolio/",
+		github: "https://github.com/mravaloarison/student-portfolio",
 	},
 	{
 		name: "First time using Firestore",
@@ -198,11 +219,11 @@ export const AboutMeSections = [
 	},
 	{
 		emoji: "🎯",
-		text: "I have experience developing AI, web, and mobile applications. At the moment, I'm learning Machine Learning, AR, and VR. And, because I love animals, I aspire to use my skills to protect the environment and wildlife.",
+		text: "I have experience developing AI, web, and mobile applications. At the moment, I'm learning Machine Learning, AR, and VR.",
 	},
 	{
 		emoji: "💻",
-		text: "I have a deep love for Hackathons. I find it exciting to collaborate with students and mentors who share my interest in technology. Each Hackathon I attend allows me to explore new tech stacks, making me a fast learner. Additionally, I enjoy helping others learn new things and learning from them in return.",
+		text: "With a deep love for Hackathons, I find it exciting to collaborate with students and mentors who share my interest in technology. Each Hackathon I attend allows me to explore new tech stacks, making me a fast learner. Additionally, I enjoy helping others learn new things and learning from them in return.",
 	},
 	{
 		emoji: "🐶",

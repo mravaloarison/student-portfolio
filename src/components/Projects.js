@@ -4,7 +4,7 @@ import { ListOfProjects } from "./FakeDb";
 import ProjectHeader from "./ProjectHeader";
 
 export default function Projects() {
-	const LOP = ListOfProjects.slice(0, 4);
+	const LOP = ListOfProjects.slice(0, 5);
 
 	return (
 		<div>
