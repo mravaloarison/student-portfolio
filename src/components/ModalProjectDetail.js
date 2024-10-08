@@ -66,6 +66,10 @@ export default function ModalProjectDetail({ name }) {
 					}
 					variant="outlined"
 					disabled={project.github ? false : true}
+					onClick={() => {
+						// open in another window
+						window.open(project.github, "_blank");
+					}}
 				>
 					Github
 				</Button>
@@ -74,6 +78,10 @@ export default function ModalProjectDetail({ name }) {
 					variant="soft"
 					color="success"
 					disabled={project.link ? false : true}
+					onClick={() => {
+						// open in another window
+						window.open(project.link, "_blank");
+					}}
 				>
 					Live
 				</Button>
