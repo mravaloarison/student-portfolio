@@ -108,7 +108,7 @@ export const ListOfProjects = [
 		technologies: ["MediaPipe", "Game dev", "Javascript"],
 		link: "https://mravaloarison.github.io/Flappy-x-ML/",
 		github: null,
-		video: "https://youtube.com/embed/EKD0_0bAun0",
+		video: "https://youtu.be/uNfKGRCc-4Y",
 		screenshots: ["/flappy.png"],
 	},
 	{
