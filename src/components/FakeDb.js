@@ -108,7 +108,7 @@ export const ListOfProjects = [
 		technologies: ["MediaPipe", "Game dev", "Javascript"],
 		link: "https://mravaloarison.github.io/Flappy-x-ML/",
 		github: null,
-		video: "https://youtu.be/uNfKGRCc-4Y",
+		video: "https://www.youtube.com/watch?v=uNfKGRCc-4Y",
 		screenshots: ["/flappy.png"],
 	},
 	{
@@ -117,7 +117,7 @@ export const ListOfProjects = [
 			"An Adobe add-on that helps content creators build Reels and Shorts faster based on user input.  Built under 24 hours at Yale University",
 		technologies: ["Adobe", "Giphy API", "Flask", "Gemini API"],
 		github: "https://github.com/mravaloarison/GeneReel/tree/main",
-		video: "https://youtu.be/dZgIqzT754Y",
+		video: "https://www.youtube.com/watch?v=dZgIqzT754Y",
 	},
 	{
 		name: "Smart Dictionary",
