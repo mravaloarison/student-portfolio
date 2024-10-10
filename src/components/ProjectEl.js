@@ -3,7 +3,7 @@ import { ListOfTechnologies } from "./FakeDb";
 import Technology from "./Technology";
 import { useState } from "react";
 
-import { Modal, Sheet, ModalClose } from "@mui/joy";
+import { Modal } from "@mui/joy";
 import ModalProjectDetail from "./ModalProjectDetail";
 
 export default function ProjectElement({ name, description, technologies }) {
