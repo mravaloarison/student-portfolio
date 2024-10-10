@@ -1,5 +1,13 @@
 export const ListOfTechnologies = [
 	{
+		name: "Twilio API",
+		icon: "https://img.icons8.com/?size=100&id=ZhlVdE53t65r&format=png&color=000000",
+	},
+	{
+		name: "Auth0",
+		icon: "https://img.icons8.com/?size=100&id=aHw0uA0Ue2bo&format=png&color=000000",
+	},
+	{
 		name: "Giphy API",
 		icon: "https://img.icons8.com/?size=100&id=inqzpXURPvpn&format=png&color=000000",
 	},
@@ -120,14 +128,12 @@ export const ListOfProjects = [
 		video: "https://www.youtube.com/embed/dZgIqzT754Y",
 	},
 	{
-		name: "Smart Dictionary",
+		name: "Sharpening dot study",
 		description:
-			"A Chrome extension that explains any highlighted text based on its context within the webpage, offering clear, relevant insights for better understanding.",
-		technologies: ["Gemini API", "Chrome Extension API", "Python", "Flask"],
-		link: null,
-		github: "https://github.com/mravaloarison/smart_dictionary",
-		video: "https://youtube.com/embed/1C7jKuk7I3I",
-		screenshots: ["/dictionary.png"],
+			"It extracts key concepts and summarizes lessons from videos, then delivers key points through spaced repetition text messages. Also, generates Quizzes based on learned material to solidify knowledge retention.",
+		technologies: ["React", "Auth0", "Twilio API", "Python", "Flask"],
+		video: "https://www.youtube.com/embed/UUzEUAJjcBA",
+		link: "https://devpost.com/software/sharpening-dot-study",
 	},
 	{
 		name: "Pollen Web app",
@@ -145,6 +151,16 @@ export const ListOfProjects = [
 		screenshots: ["pollen1.png", "pollen2.png", "pollen3.png"],
 	},
 	{
+		name: "Smart Dictionary",
+		description:
+			"A Chrome extension that explains any highlighted text based on its context within the webpage, offering clear, relevant insights for better understanding.",
+		technologies: ["Gemini API", "Chrome Extension API", "Python", "Flask"],
+		link: null,
+		github: "https://github.com/mravaloarison/smart_dictionary",
+		video: "https://youtube.com/embed/1C7jKuk7I3I",
+		screenshots: ["/dictionary.png"],
+	},
+	{
 		name: "Student Porfolio",
 		description:
 			"My personal portfolio website, built with React and hosted on Github Pages.",
@@ -152,6 +168,7 @@ export const ListOfProjects = [
 		link: "https://mravaloarison.github.io/student-portfolio/",
 		github: "https://github.com/mravaloarison/student-portfolio",
 	},
+
 	{
 		name: "First time using Firestore",
 		description:
@@ -201,16 +218,16 @@ export const ListOfProjects = [
 
 export const SocialMedias = [
 	{
-		icon: "https://img.icons8.com/?size=100&id=59813&format=png&color=000000",
-		link: "https://www.instagram.com/mami_rvl/?hl=en",
-	},
-	{
 		icon: "https://img.icons8.com/?size=100&id=98960&format=png&color=000000",
 		link: "https://www.linkedin.com/in/mravaloarison/",
 	},
 	{
 		icon: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
 		link: "https://github.com/mravaloarison",
+	},
+	{
+		icon: "https://img.icons8.com/?size=100&id=59813&format=png&color=000000",
+		link: "https://www.instagram.com/mami_rvl/?hl=en",
 	},
 ];
 
