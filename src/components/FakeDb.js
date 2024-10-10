@@ -122,7 +122,7 @@ export const ListOfProjects = [
 	{
 		name: "GeneReel",
 		description:
-			"An Adobe add-on that helps content creators build Reels and Shorts faster based on user input.  Built under 24 hours at Yale University",
+			"An Adobe add-on that helps content creators build Reels and Shorts faster based on prompt.  Built under 24 hours at Yale University",
 		technologies: ["Adobe", "Giphy API", "Flask", "Gemini API"],
 		github: "https://github.com/mravaloarison/GeneReel/tree/main",
 		video: "https://www.youtube.com/embed/dZgIqzT754Y",
