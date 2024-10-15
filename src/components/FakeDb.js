@@ -123,7 +123,7 @@ export const ListOfProjects = [
 		description:
 			"My first Lens Game and first time building AR, made for Spectacles.",
 		technologies: ["Lens Studio", "Snap AR", "Javascript", "Typescript"],
-		link: null,
+		link: "https://devpost.com/software/project-wb2akunsytx4?ref_content=user-portfolio&ref_feature=in_progress",
 		video: "https://www.youtube.com/embed/h-naygpjSrQ",
 	},
 	{
