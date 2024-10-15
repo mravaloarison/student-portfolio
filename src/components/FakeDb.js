@@ -1,5 +1,13 @@
 export const ListOfTechnologies = [
 	{
+		name: "lens studio",
+		icon: "/lens.png",
+	},
+	{
+		name: "Snap AR",
+		icon: "https://img.icons8.com/?size=100&id=23029&format=png&color=000000",
+	},
+	{
 		name: "Twilio API",
 		icon: "https://img.icons8.com/?size=100&id=ZhlVdE53t65r&format=png&color=000000",
 	},
@@ -110,6 +118,13 @@ export const ListOfTechnologies = [
 ];
 
 export const ListOfProjects = [
+	{
+		name: "Delivery Dash",
+		description:
+			"My first Lens Game and first time building AR, made for Spectacles.",
+		technologies: ["Lens Studio", "Snap AR", "Javascript", "Typescript"],
+		video: "https://www.youtube.com/watch?v=h-naygpjSrQ",
+	},
 	{
 		name: "Flappy x ML",
 		description: "Flappy Bird using face detection to control the bird.",
