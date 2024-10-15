@@ -6,7 +6,8 @@ export default function DownloadResume() {
 	const downloadResume = () => {
 		const link = document.createElement("a");
 		link.href = "/resume.pdf";
-		link.download = "resume.pdf";
+		link.download =
+			"https://github.com/mravaloarison/student-portfolio/blob/main/public/resume.pdf";
 		document.body.appendChild(link);
 		link.click();
 		document.body.removeChild(link);
