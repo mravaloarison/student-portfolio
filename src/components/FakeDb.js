@@ -1,7 +1,7 @@
 export const ListOfTechnologies = [
 	{
-		name: "lens studio",
-		icon: "/lens.png",
+		name: "Lens Studio",
+		icon: "https://support.lensstudio.snapchat.com/hc/theming_assets/01HZPG14DR16WSMEBFMX7GGWD6",
 	},
 	{
 		name: "Snap AR",
@@ -123,7 +123,8 @@ export const ListOfProjects = [
 		description:
 			"My first Lens Game and first time building AR, made for Spectacles.",
 		technologies: ["Lens Studio", "Snap AR", "Javascript", "Typescript"],
-		video: "https://www.youtube.com/watch?v=h-naygpjSrQ",
+		link: null,
+		video: "https://www.youtube.com/embed/h-naygpjSrQ",
 	},
 	{
 		name: "Flappy x ML",
