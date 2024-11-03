@@ -1,5 +1,9 @@
 export const ListOfTechnologies = [
 	{
+		name: "OpenCV",
+		icon: "https://img.icons8.com/?size=100&id=bpip0gGiBLT1&format=png&color=000000",
+	},
+	{
 		name: "Lens Studio",
 		icon: "https://support.lensstudio.snapchat.com/hc/theming_assets/01HZPG14DR16WSMEBFMX7GGWD6",
 	},
@@ -118,6 +122,21 @@ export const ListOfTechnologies = [
 ];
 
 export const ListOfProjects = [
+	{
+		name: "Cat-culus",
+		description:
+			"Fun way to play with cats and learn calculus by using Machine Learning and AI",
+		technologies: [
+			"OpenCV",
+			"Python",
+			"Game dev",
+			"MediaPipe",
+			"Gemini API",
+		],
+		link: "https://devpost.com/software/cat-culus?ref_content=user-portfolio&ref_feature=in_progress",
+		github: null,
+		video: "https://www.youtube.com/embed/vwvvHRmsdPQ",
+	},
 	{
 		name: "Delivery Dash",
 		description:
