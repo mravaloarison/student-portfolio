@@ -1,5 +1,9 @@
 export const ListOfTechnologies = [
 	{
+		name: "Pygame",
+		icon: "https://www.pygame.org/images/logo_lofi.png",
+	},
+	{
 		name: "OpenCV",
 		icon: "https://img.icons8.com/?size=100&id=bpip0gGiBLT1&format=png&color=000000",
 	},
@@ -126,13 +130,7 @@ export const ListOfProjects = [
 		name: "Cat-culus",
 		description:
 			"Fun way to play with cats and learn calculus by using Machine Learning and AI",
-		technologies: [
-			"OpenCV",
-			"Python",
-			"Game dev",
-			"MediaPipe",
-			"Gemini API",
-		],
+		technologies: ["OpenCV", "Python", "Pygame", "MediaPipe", "Gemini API"],
 		link: "https://devpost.com/software/cat-culus?ref_content=user-portfolio&ref_feature=in_progress",
 		github: null,
 		video: "https://www.youtube.com/embed/vwvvHRmsdPQ",
