@@ -132,8 +132,8 @@ export const ListOfProjects = [
 			"Fun way to play with cats and learn calculus by using Machine Learning and AI",
 		technologies: ["OpenCV", "Python", "Pygame", "MediaPipe", "Gemini API"],
 		link: "https://devpost.com/software/cat-culus?ref_content=user-portfolio&ref_feature=in_progress",
-		github: null,
-		video: "https://www.youtube.com/embed/vwvvHRmsdPQ",
+		github: "https://github.com/mravaloarison/cat-culus",
+		video: "https://www.youtube.com/embed/NN-IrWTPusk",
 	},
 	{
 		name: "Delivery Dash",
