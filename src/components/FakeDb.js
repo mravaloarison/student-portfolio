@@ -1,7 +1,7 @@
 export const ListOfTechnologies = [
 	{
 		name: "Pygame",
-		icon: "https://img.icons8.com/?size=100&id=80984&format=png&color=000000",
+		icon: "https://img.icons8.com/?size=100&id=87063&format=png&color=000000",
 	},
 	{
 		name: "OpenCV",
