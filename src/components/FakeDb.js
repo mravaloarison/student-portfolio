@@ -136,20 +136,12 @@ export const ListOfProjects = [
 		video: "https://www.youtube.com/embed/ToHxbKb4sEQ",
 	},
 	{
-		name: "Delivery Dash",
-		description:
-			"My first Lens Game and first time building AR, made for Spectacles.",
-		technologies: ["Lens Studio", "Snap AR", "Javascript", "Typescript"],
-		link: "https://devpost.com/software/project-wb2akunsytx4?ref_content=user-portfolio&ref_feature=in_progress",
-		video: "https://www.youtube.com/embed/h-naygpjSrQ",
-	},
-	{
 		name: "Flappy x ML",
 		description: "Flappy Bird using face detection to control the bird.",
 		technologies: ["MediaPipe", "Game dev", "Javascript"],
 		link: "https://mravaloarison.github.io/Flappy-x-ML/",
 		github: null,
-		video: "https://www.youtube.com/embed/uNfKGRCc-4Y",
+		video: "https://www.youtube.com/embed/6fLMEm1HIjQ",
 	},
 	{
 		name: "GeneReel",
@@ -211,6 +203,14 @@ export const ListOfProjects = [
 		],
 		link: "https://bookbridge-app-gray.vercel.app/",
 		github: "https://github.com/mravaloarison/bookstore_app",
+	},
+	{
+		name: "Delivery Dash",
+		description:
+			"My first Lens Game and first time building AR, made for Spectacles.",
+		technologies: ["Lens Studio", "Snap AR", "Javascript", "Typescript"],
+		link: "https://devpost.com/software/project-wb2akunsytx4?ref_content=user-portfolio&ref_feature=in_progress",
+		video: "https://www.youtube.com/embed/h-naygpjSrQ",
 	},
 	{
 		name: "Nypc",
