@@ -129,7 +129,7 @@ export const ListOfProjects = [
 	{
 		name: "Cat-culus",
 		description:
-			"Fun way to play with cats and learn calculus by using Machine Learning and AI",
+			"A simple Pygame that leverages Machine Learning and Artificial Intelligence to save a cat by solving math problems. The design and game logic were primarily inspired by reverse engineering the Google Cat Academy Third edition.",
 		technologies: ["OpenCV", "Python", "Pygame", "MediaPipe", "Gemini API"],
 		link: "https://devpost.com/software/cat-culus?ref_content=user-portfolio&ref_feature=in_progress",
 		github: "https://github.com/mravaloarison/cat-culus",
