@@ -150,7 +150,6 @@ export const ListOfProjects = [
 		link: "https://mravaloarison.github.io/Flappy-x-ML/",
 		github: null,
 		video: "https://www.youtube.com/embed/uNfKGRCc-4Y",
-		screenshots: ["/flappy.png"],
 	},
 	{
 		name: "GeneReel",
@@ -181,7 +180,6 @@ export const ListOfProjects = [
 		link: null,
 		github: "https://github.com/mravaloarison/pollen_-ravaloarison",
 		vide: null,
-		screenshots: ["pollen1.png", "pollen2.png", "pollen3.png"],
 	},
 	{
 		name: "Smart Dictionary",
@@ -191,7 +189,6 @@ export const ListOfProjects = [
 		link: null,
 		github: "https://github.com/mravaloarison/smart_dictionary",
 		video: "https://youtube.com/embed/1C7jKuk7I3I",
-		screenshots: ["/dictionary.png"],
 	},
 	{
 		name: "Student Porfolio",
