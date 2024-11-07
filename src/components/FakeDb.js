@@ -133,7 +133,7 @@ export const ListOfProjects = [
 		technologies: ["OpenCV", "Python", "Pygame", "MediaPipe", "Gemini API"],
 		link: "https://devpost.com/software/cat-culus?ref_content=user-portfolio&ref_feature=in_progress",
 		github: "https://github.com/mravaloarison/cat-culus",
-		video: "https://www.youtube.com/embed/NN-IrWTPusk",
+		video: "https://www.youtube.com/embed/ToHxbKb4sEQ",
 	},
 	{
 		name: "Delivery Dash",
