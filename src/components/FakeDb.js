@@ -1,5 +1,9 @@
 export const ListOfTechnologies = [
 	{
+		name: "MapKit",
+		icon: "https://img.icons8.com/?size=100&id=uzeKRJIGwbBY&format=png&color=000000",
+	},
+	{
 		name: "Pygame",
 		icon: "https://img.icons8.com/?size=100&id=87063&format=png&color=000000",
 	},
@@ -126,6 +130,14 @@ export const ListOfTechnologies = [
 ];
 
 export const ListOfProjects = [
+	{
+		name: "Green",
+		description:
+			"An app built to reduce traffic emissions by helping drivers find routes with minimal stops as possible. It analyzes current traffic for a route and dynamically recommends routes that avoid traffic hotspots, ensuring drivers spend less time in traffic even though, now the travel time has increased.",
+		technologies: ["Swift", "SwiftUI", "MapKit"],
+		link: "https://devpost.com/software/green-aed7s9",
+		github: "https://github.com/mravaloarison/Green/tree/main/Green",
+	},
 	{
 		name: "Cat-culus",
 		description:
