@@ -16,7 +16,7 @@ export default function Profile() {
 						variant="outlined"
 						underline="always"
 					>
-						8 x Hackathon Winner
+						10 x Hackathon Winner
 					</Link>
 				</span>
 			</Typography>
