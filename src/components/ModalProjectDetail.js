@@ -34,7 +34,7 @@ export default function ModalProjectDetail({ name }) {
 				<Video link={project.video} projectName={project.name} />
 			)}
 
-			<Box sx={{ pb: 0.6 }}>
+			<Box sx={{ pb: 0.6, pt: 1.5 }}>
 				{technologies.map((technology) => (
 					<Technology
 						key={technology}
