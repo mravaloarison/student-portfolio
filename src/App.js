@@ -19,7 +19,7 @@ function App() {
 			<Projects />
 			<Typography level="body-xs">
 				{" "}
-				© By Rava <span className="noto-emoji">🦮</span>{" "}
+				© Handcoded by Rava <span className="noto-emoji">🦮</span>
 			</Typography>
 		</Stack>
 	);

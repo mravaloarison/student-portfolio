@@ -4,7 +4,7 @@ export default function Profile() {
 	return (
 		<CardContent>
 			<Typography level="h3" sx={{ pb: { xs: 2, sm: 4 } }}>
-				Maminiaina Ravalorison
+				Maminiaina Ravalorison (Rava)
 			</Typography>
 
 			<Typography level="body-sm">
