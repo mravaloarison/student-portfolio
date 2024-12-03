@@ -4,12 +4,27 @@ export default function Technology({ name, icon }) {
 	return (
 		<Tooltip title={name}>
 			<Button
-				variant="link"
+				variant="outlined"
 				startDecorator={
-					<img width="21" height="21" src={icon} alt="icon" />
+					<img
+						width="18"
+						height="18"
+						src={icon}
+						alt="icon"
+						style={{ marginRight: 0.5 + "em" }}
+					/>
 				}
-				sx={{ px: 0 }}
-			></Button>
+				sx={{
+					px: 1,
+					py: 0.2,
+					my: 0.5,
+					mr: 0.6,
+					fontSize: 0.6 + "em",
+				}}
+				size="small"
+			>
+				{name}
+			</Button>
 		</Tooltip>
 	);
 }

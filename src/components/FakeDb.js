@@ -1,7 +1,7 @@
 export const ListOfTechnologies = [
 	{
 		name: "MapKit",
-		icon: "https://img.icons8.com/?size=100&id=uzeKRJIGwbBY&format=png&color=000000",
+		icon: "https://developer.apple.com/assets/elements/icons/mapkit/mapkit-64x64_2x.png",
 	},
 	{
 		name: "Pygame",
@@ -89,7 +89,7 @@ export const ListOfTechnologies = [
 	},
 	{
 		name: "MediaPipe",
-		icon: "https://img.icons8.com/?size=100&id=MYjfd47hfzYG&format=png&color=000000",
+		icon: "https://www.gstatic.com/alkali/fafaf18cdb81b4c1f812064840f46201b070fffd.png",
 	},
 	{
 		name: "Game dev",
@@ -151,8 +151,8 @@ export const ListOfProjects = [
 		name: "Flappy x ML",
 		description: "Flappy Bird using face detection to control the bird.",
 		technologies: ["MediaPipe", "Game dev", "Javascript"],
-		link: "https://mravaloarison.github.io/Flappy-x-ML/",
-		github: null,
+		link: null,
+		github: "https://github.com/mravaloarison/Flappy-x-ML",
 		video: "https://www.youtube.com/embed/6fLMEm1HIjQ",
 	},
 	{
