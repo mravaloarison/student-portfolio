@@ -1,4 +1,4 @@
-import { Sheet, Typography, ModalClose, Stack, Button } from "@mui/joy";
+import { Sheet, Typography, ModalClose, Stack, Button, Box } from "@mui/joy";
 import { ListOfProjects, ListOfTechnologies } from "./FakeDb";
 import Video from "./Video";
 import Technology from "./Technology";
@@ -34,14 +34,7 @@ export default function ModalProjectDetail({ name }) {
 				<Video link={project.video} projectName={project.name} />
 			)}
 
-			<Stack
-				direction="row"
-				spacing={1}
-				sx={{
-					alignItems: "start",
-					pt: 2,
-				}}
-			>
+			<Box sx={{ pb: 0.6 }}>
 				{technologies.map((technology) => (
 					<Technology
 						key={technology}
@@ -49,7 +42,7 @@ export default function ModalProjectDetail({ name }) {
 						icon={LOT.find((el) => el.name === technology).icon}
 					/>
 				))}
-			</Stack>
+			</Box>
 
 			<Typography level="body-md" sx={{ pb: 2 }}>
 				{project.description}
