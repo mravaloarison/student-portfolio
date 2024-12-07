@@ -18,7 +18,7 @@ export default function Technology({ name, icon }) {
 					px: 1,
 					py: 0.2,
 					my: 0.5,
-					mr: 0.6,
+					mr: 0.9,
 					fontSize: 0.6 + "em",
 				}}
 				size="small"
