@@ -5,7 +5,7 @@ import CloudDownloadOutlinedIcon from "@mui/icons-material/CloudDownloadOutlined
 export default function DownloadResume() {
 	const downloadResume = () => {
 		window.open(
-			"https://drive.google.com/file/d/131r91PeRhD40eNl6LwpilcLdLiBnen5j/view?usp=sharing",
+			"https://docs.google.com/document/d/1DtW2dN2mNKDcxAfM6rUC4l2Anjvo_oW4xK46Q4S7ne0/edit?usp=sharing",
 			"_blank"
 		);
 	};
