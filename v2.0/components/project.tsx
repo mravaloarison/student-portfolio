@@ -77,7 +77,7 @@ export default function ProjectPage() {
 		<div className="w-screen h-screen flex flex-col items-center px-4 py-8 main opacity-0 overflow-y-auto bg-white text-black">
 			<button
 				onClick={goBack}
-				className="text-indigo-500 flex gap-2 items-center text-xl md:text-2xl font-semibold hover:cursor-pointer mb-6"
+				className="text-indigo-400 flex gap-2 items-center text-xl md:text-2xl font-semibold hover:cursor-pointer"
 			>
 				<ArrowLeft />
 				Go back
