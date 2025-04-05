@@ -57,6 +57,24 @@ export const projects = [
 		],
 		githubLink: "https://github.com/mravaloarison/cat-culus/blob/main/README.md"
     },
+	{
+		title: "Wallet",
+		description:
+			"This is my first corss platform app, a simple .NET MAUI application that checks if a credit card number is valid and identifies its type (Visa, MasterCard, Amex or Unknown), originally a project for C from Harvard CS50x.",
+		technologies: ["Visual Studio", ".NET Maui", "C#"],
+		year: "2022",
+		screenshots: [
+			"/maui.png",
+			"/maui1.png",
+			"/maui2.png",
+			"/maui3.png",
+			"/maui4.png",
+			"/maui5.png",
+			"/maui6.png",
+			"/maui7.png",
+		],
+		githubLink: "https://github.com/mravaloarison/wallet/blob/main/README.md",
+	},
     {
         title: "Green",
         description:
