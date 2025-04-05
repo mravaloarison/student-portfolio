@@ -43,22 +43,21 @@ export const projects = [
 		githubLink: "https://github.com/mravaloarison/Green/blob/main/README.md"
     },
 	{
-        title: "CatCulus",
+        title: "Flappy x ML",
         description:
-            "A Pygame inspired by Google Magic Cat academy third edition. The design and game logic were primarily inspired by reverse engineering the Google Cat Academy Third edition.",
-        year: "October 2024",
+            "Flappy Bird using face detection to control the bird.",
+        year: "September 2024",
         technologies: [
-            "Pygame",
-            "OpenCV",
+            "Javascript",
             "MediaPipe",
-            "Gemini API",
+            "Face detection",
         ],
 		screenshots: [
-			"/cat-culus.png",
-			"/cat-culus2.png",
-			"/cat-culus3.png",
+			"/Flappy-x-ML.PNG",
+			"/Flappy-x-ML2.PNG",
+			"/Flappy-x-ML3.PNG",
 		],
-		githubLink: "https://github.com/mravaloarison/cat-culus/blob/main/README.md"
+		githubLink: "https://github.com/mravaloarison/Flappy-x-ML/blob/main/README.md"
     },
 	{
         title: "Slay Interview",
@@ -84,7 +83,24 @@ export const projects = [
 		],
 		githubLink: "https://github.com/mravaloarison/IT-something/blob/main/README.md"
     },
-
+	{
+        title: "CatCulus",
+        description:
+            "A Pygame inspired by Google Magic Cat academy third edition. The design and game logic were primarily inspired by reverse engineering the Google Cat Academy Third edition.",
+        year: "October 2024",
+        technologies: [
+            "Pygame",
+            "OpenCV",
+            "MediaPipe",
+            "Gemini API",
+        ],
+		screenshots: [
+			"/cat-culus.png",
+			"/cat-culus2.png",
+			"/cat-culus3.png",
+		],
+		githubLink: "https://github.com/mravaloarison/cat-culus/blob/main/README.md"
+    },
 	{
 		title: "GeneReel",
 		description:
@@ -99,23 +115,6 @@ export const projects = [
 		],
 		githubLink: "https://github.com/mravaloarison/GeneReel/blob/main/README.md",
 	},
-	{
-        title: "Flappy x ML",
-        description:
-            "Flappy Bird using face detection to control the bird.",
-        year: "September 2024",
-        technologies: [
-            "Javascript",
-            "MediaPipe",
-            "Face detection",
-        ],
-		screenshots: [
-			"/Flappy-x-ML.PNG",
-			"/Flappy-x-ML2.PNG",
-			"/Flappy-x-ML3.PNG",
-		],
-		githubLink: "https://github.com/mravaloarison/Flappy-x-ML/blob/main/README.md"
-    },
 	{
 		title: "Wallet",
 		description:
