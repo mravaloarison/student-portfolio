@@ -74,10 +74,10 @@ export default function ProjectPage() {
 	}, [searchParams]);
 
 	return (
-		<div className="w-screen h-screen flex flex-col items-center px-4 py-8 main opacity-0 overflow-y-auto bg-white text-black">
+		<div className="w-screen h-screen flex flex-col xl:items-center px-4 py-8 main opacity-0 overflow-y-auto bg-white text-black">
 			<button
 				onClick={goBack}
-				className="text-indigo-400 flex gap-2 items-center text-xl md:text-2xl font-semibold hover:cursor-pointer"
+				className="text-indigo-500 flex gap-2 items-center text-xl md:text-2xl font-semibold hover:cursor-pointer mb-6"
 			>
 				<ArrowLeft />
 				Go back

@@ -1,7 +1,7 @@
 export const SocialMediaLinks = [
     {
         icon: "https://img.icons8.com/?size=100&id=12160&format=png&color=000000",
-        link: "https://drive.google.com/file/d/1csURe3jL7UQ6vr_wbh4JWTry-sZfPkNQ/view?usp=sharing",
+        link: "https://drive.google.com/file/d/1g-vgrdUyOhhrnilgg-WvlrciWGE02AFF/view?usp=sharing",
         name: "Resume",
     },
     {
