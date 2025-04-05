@@ -95,9 +95,9 @@ export const projects = [
             "Face detection",
         ],
 		screenshots: [
-			"/Flappy-x-ML.png",
-			"/Flappy-x-ML2.png",
-			"/Flappy-x-ML3.png",
+			"/Flappy-x-ML.PNG",
+			"/Flappy-x-ML2.PNG",
+			"/Flappy-x-ML3.PNG",
 		],
 		githubLink: "https://github.com/mravaloarison/Flappy-x-ML/blob/main/README.md"
     },
