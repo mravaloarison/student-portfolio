@@ -81,7 +81,7 @@ export const projects = [
         title: "Slay Interview",
         description: 
             "An easy way to practice your interview skills. A platform for users to prepare for technical interviews.",
-        year: "January 2022",
+        year: "January 2023",
         technologies: [
             "Amplify by AWS",
             "Next.js",
@@ -101,6 +101,20 @@ export const projects = [
 		],
 		githubLink: "https://github.com/mravaloarison/IT-something/blob/main/README.md"
     },
+	{
+		title: "GeneReel",
+		description:
+			"An Adobe add-on that helps content creators build Reels and Shorts faster based on prompt.  Built under 24 hours at Yale University",
+		technologies: ["Adobe", "Giphy API", "Flask", "Gemini API"],
+		year: "November 2024",
+		screenshots: [
+			"GeneReel.png",
+			"GeneReel2.png",
+			"GeneReel3.png",
+			"GeneReel4.png",
+		],
+		githubLink: "https://github.com/mravaloarison/GeneReel/blob/main/README.md",
+	}
 ];
 
 export const technologies = [
