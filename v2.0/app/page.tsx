@@ -3,7 +3,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Divider from "@/components/divider";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { projects, SocialMediaLinks } from "./fakedb";
 import SocialMediaView from "@/components/social_medias";
 import Link from "next/link";
@@ -13,40 +13,81 @@ import { Link2 } from "lucide-react";
 export default function Home() {
 	const tl = useRef(gsap.timeline());
 
+	const [countRender, setCountRender] = useState<number | null>(null);
+
+	useEffect(() => {
+		const count = localStorage.getItem("countRender");
+		console.log(count);
+		if (count) {
+			localStorage.setItem(
+				"countRender",
+				(parseInt(count) + 1).toString()
+			);
+			setCountRender(parseInt(count) + 1);
+		} else {
+			localStorage.setItem("countRender", "1");
+			setCountRender(1);
+		}
+	}, []);
+
 	useGSAP(() => {
-		tl.current = gsap.timeline();
+		if (countRender === 1) {
+			tl.current = gsap.timeline();
 
-		gsap.fromTo(
-			".main",
-			{ scale: 0.2, opacity: 0 },
-			{ scale: 1, duration: 0.2, opacity: 1 }
-		);
+			gsap.fromTo(
+				".main",
+				{ scale: 0.2, opacity: 0 },
+				{ scale: 1, duration: 0.2, opacity: 1 }
+			);
 
-		const logos = gsap.utils.toArray(".logo");
-		tl.current.from(logos, {
-			x: 10,
-			duration: 0.5,
-			stagger: 0.1,
-			opacity: 0,
-			ease: "power2.inOut",
-		});
+			const logos = gsap.utils.toArray(".logo");
+			tl.current.from(logos, {
+				x: 10,
+				duration: 0.5,
+				stagger: 0.1,
+				opacity: 0,
+				ease: "power2.inOut",
+			});
 
-		const intros = gsap.utils.toArray(".intro");
-		tl.current.from(intros, {
-			y: 10,
-			duration: 0.5,
-			stagger: 0.1,
-			opacity: 0,
-			ease: "power2.inOut",
-		});
+			const intros = gsap.utils.toArray(".intro");
+			tl.current.from(intros, {
+				y: 10,
+				duration: 0.5,
+				stagger: 0.1,
+				opacity: 0,
+				ease: "power2.inOut",
+			});
 
-		tl.current.from(".projects", {
-			y: 10,
-			duration: 0.3,
-			opacity: 0,
-			ease: "power2.inOut",
-		});
-	});
+			tl.current.from(".projects", {
+				y: 10,
+				duration: 0.3,
+				opacity: 0,
+				ease: "power2.inOut",
+			});
+		} else {
+			gsap.to(".main", { scale: 1, duration: 0.2, opacity: 1 });
+			gsap.to(".projects", {
+				y: 0,
+				duration: 0.3,
+				opacity: 1,
+				ease: "power2.inOut",
+			});
+			gsap.to(".intro", {
+				y: 0,
+				duration: 0.5,
+				stagger: 0.1,
+				opacity: 1,
+				ease: "power2.inOut",
+			});
+			gsap.to(".logo", {
+				x: 0,
+				duration: 0.5,
+				stagger: 0.1,
+				opacity: 1,
+				ease: "power2.inOut",
+			});
+		}
+	}, [countRender]);
 
 	function leavePage() {
 		gsap.to(".main", { x: 0.2, duration: 0.2, opacity: 0 });
