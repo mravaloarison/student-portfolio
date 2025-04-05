@@ -3,7 +3,6 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Divider from "@/components/divider";
-import { useEffect, useRef, useState } from "react";
 import { projects, SocialMediaLinks } from "./fakedb";
 import SocialMediaView from "@/components/social_medias";
 import Link from "next/link";
@@ -11,83 +10,35 @@ import ProjectCard from "@/components/project_card";
 import { Link2 } from "lucide-react";
 
 export default function Home() {
-	const tl = useRef(gsap.timeline());
-
-	const [countRender, setCountRender] = useState<number | null>(null);
-
-	useEffect(() => {
-		const count = localStorage.getItem("countRender");
-		console.log(count);
-		if (count) {
-			localStorage.setItem(
-				"countRender",
-				(parseInt(count) + 1).toString()
-			);
-			setCountRender(parseInt(count) + 1);
-		} else {
-			localStorage.setItem("countRender", "1");
-			setCountRender(1);
-		}
-	}, []);
-
 	useGSAP(() => {
-		if (countRender === 1) {
-			tl.current = gsap.timeline();
-
-			gsap.fromTo(
-				".main",
-				{ scale: 0.2, opacity: 0 },
-				{ scale: 1, duration: 0.2, opacity: 1 }
-			);
-
-			const logos = gsap.utils.toArray(".logo");
-			tl.current.from(logos, {
-				x: 10,
-				duration: 0.5,
-				stagger: 0.1,
-				opacity: 0,
-				ease: "power2.inOut",
-			});
-
-			const intros = gsap.utils.toArray(".intro");
-			tl.current.from(intros, {
-				y: 10,
-				duration: 0.5,
-				stagger: 0.1,
-				opacity: 0,
-				ease: "power2.inOut",
-			});
-
-			tl.current.from(".projects", {
-				y: 10,
-				duration: 0.3,
-				opacity: 0,
-				ease: "power2.inOut",
-			});
-		} else {
-			gsap.to(".main", { scale: 1, duration: 0.2, opacity: 1 });
-			gsap.to(".projects", {
-				y: 0,
-				duration: 0.3,
-				opacity: 1,
-				ease: "power2.inOut",
-			});
-			gsap.to(".intro", {
-				y: 0,
-				duration: 0.5,
-				stagger: 0.1,
-				opacity: 1,
-				ease: "power2.inOut",
-			});
-			gsap.to(".logo", {
-				x: 0,
-				duration: 0.5,
-				stagger: 0.1,
-				opacity: 1,
-				ease: "power2.inOut",
-			});
-		}
-	}, [countRender]);
+		gsap.fromTo(
+			".main",
+			{ x: 10, opacity: 0 },
+			{ x: 0, duration: 0.2, opacity: 1 }
+		);
+		const logos = gsap.utils.toArray(".logo");
+		gsap.from(logos, {
+			x: 10,
+			duration: 0.5,
+			stagger: 0.1,
+			opacity: 0,
+			ease: "power2.inOut",
+		});
+		const intros = gsap.utils.toArray(".intro");
+		gsap.from(intros, {
+			x: 10,
+			duration: 0.5,
+			stagger: 0.1,
+			opacity: 0,
+			ease: "power2.inOut",
+		});
+		gsap.from(".projects", {
+			x: 10,
+			duration: 0.3,
+			opacity: 0,
+			ease: "power2.inOut",
+		});
+	}, []);
 
 	function leavePage() {
 		gsap.to(".main", { x: 0.2, duration: 0.2, opacity: 0 });
@@ -98,12 +49,12 @@ export default function Home() {
 	}
 
 	return (
-		<div className="main w-full max-w-screen mx-auto min-h-screen opacity-0 p-8 md:p-12 bg-white">
-			<div className="flex flex-col gap-8 md:gap-12">
-				<nav className="max-w-4xl mx-auto w-full">
+		<div className="main w-full max-w-screen mx-auto min-h-screen opacity-0 p-8 xl:p-12 bg-white">
+			<div className="flex flex-col gap-8 xl:gap-12">
+				<nav className="max-w-7xl mx-auto w-full">
 					<div className="flex justify-between items-center">
 						<div className="w-full">
-							<div className="w-14 h-14 md:w-20 md:h-20 border border-gray-200 rounded-full p-1 logo">
+							<div className="w-14 h-14 xl:w-20 xl:h-20 border border-gray-200 rounded-full p-1 logo">
 								<img
 									src="/IMG_6917.jpeg"
 									alt="Logo"
@@ -115,7 +66,7 @@ export default function Home() {
 							{SocialMediaLinks.map((SM) => (
 								<div
 									key={SM.name}
-									className="w-10 h-10 md:w-14 md:h-14 border border-gray-200 rounded-full p-1 logo hover:shadow-lg gorup transition-transform"
+									className="w-10 h-10 xl:w-14 xl:h-14 border border-gray-200 rounded-full p-1 logo hover:shadow-lg gorup transition-transform"
 								>
 									<SocialMediaView
 										mediaName={SM.name}
@@ -128,7 +79,7 @@ export default function Home() {
 					</div>
 				</nav>
 
-				<div className="text-xl md:text-2xl font-semibold max-w-4xl mx-auto w-full text-gray-500">
+				<div className="text-xl xl:text-2xl font-semibold max-w-7xl mx-auto w-full text-gray-500">
 					<p
 						className="intro overflow-hidden text-ellipsis whitespace-pre-wrap"
 						style={{
@@ -158,19 +109,19 @@ export default function Home() {
 					</p>
 					<button
 						onClick={leavePage}
-						className="text-indigo-400 flex gap-2 items-center pt-8 md:pt-12 intro hover:cursor-pointer"
+						className="text-indigo-400 flex gap-2 items-center pt-8 xl:pt-12 intro hover:cursor-pointer"
 					>
 						Read more
 						<Link2 />
 					</button>
 				</div>
 
-				<div className="max-w-4xl mx-auto w-full flex flex-col gap-8 md:gap-12 projects">
+				<div className="max-w-7xl mx-auto w-full flex flex-col gap-8 xl:gap-12 projects">
 					<Divider />
 					<div className="text-3xl font-semibold text-black">
 						Projects
 					</div>
-					<div className="flex flex-col gap-12">
+					<div className="flex flex-col xl:grid grid-cols-2 gap-12">
 						{projects.map((project) => (
 							<ProjectCard
 								key={project.title}
@@ -185,10 +136,10 @@ export default function Home() {
 					</div>
 				</div>
 
-				<footer className="max-w-4xl mx-auto w-full">
+				<footer className="max-w-7xl mx-auto w-full">
 					<Divider />
-					<div className="flex pt-8 md:pt-12">
-						<div className="text-xs text-gray-500">
+					<div className="flex items-center pt-8 xl:pt-12">
+						<div className="text-xs text-gray-500 text-center">
 							© 2025 by Rava
 						</div>
 					</div>

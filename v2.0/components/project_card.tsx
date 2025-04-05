@@ -54,7 +54,7 @@ export default function ProjectCard({
 					interval={5000}
 				/>
 			</div>
-			<div className="flex flex-col gap-4 col-span-3">
+			<div className="flex flex-col gap-4 ">
 				<button
 					onClick={() => goToAProject(githubLink)}
 					className="flex items-center gap-2"

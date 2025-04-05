@@ -28,7 +28,7 @@ export default function Page() {
 
 	return (
 		<div className="w-screen h-screen main opacity-0 bg-white">
-			<div className="p-8 md:p-12 max-w-4xl w-full mx-auto text-xl md:text-2xl font-semibold text-gray-500">
+			<div className="p-8 md:p-12 max-w-7xl w-full mx-auto text-xl md:text-2xl font-semibold text-gray-500">
 				<button
 					onClick={goBack}
 					className="text-indigo-400 flex gap-2 items-center text-xl md:text-2xl font-semibold hover:cursor-pointer"
