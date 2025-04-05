@@ -23,59 +23,6 @@ export const SocialMediaLinks = [
 
 export const projects = [
 	{
-        title: "Flappy x ML",
-        description:
-            "Flappy Bird using face detection to control the bird.",
-        year: "September 2024",
-        technologies: [
-            "Javascript",
-            "MediaPipe",
-            "Face detection",
-        ],
-		screenshots: [
-			"/Flappy-x-ML.PNG",
-			"/Flappy-x-ML2.PNG",
-			"/Flappy-x-ML3.PNG",
-		],
-		githubLink: "https://github.com/mravaloarison/Flappy-x-ML/blob/main/README.md"
-    },
-	{
-        title: "CatCulus",
-        description:
-            "A Pygame inspired by Google Magic Cat academy third edition. The design and game logic were primarily inspired by reverse engineering the Google Cat Academy Third edition.",
-        year: "October 2024",
-        technologies: [
-            "Pygame",
-            "OpenCV",
-            "MediaPipe",
-            "Gemini API",
-        ],
-		screenshots: [
-			"/cat-culus.png",
-			"/cat-culus2.png",
-			"/cat-culus3.png",
-		],
-		githubLink: "https://github.com/mravaloarison/cat-culus/blob/main/README.md"
-    },
-	{
-		title: "Wallet",
-		description:
-			"This is my first corss platform app, a simple .NET MAUI application that checks if a credit card number is valid and identifies its type (Visa, MasterCard, Amex or Unknown), originally a project for C from Harvard CS50x.",
-		technologies: ["Visual Studio", ".NET Maui", "C#"],
-		year: "2022",
-		screenshots: [
-			"/maui.png",
-			"/maui1.png",
-			"/maui2.png",
-			"/maui3.png",
-			"/maui4.png",
-			"/maui5.png",
-			"/maui6.png",
-			"/maui7.png",
-		],
-		githubLink: "https://github.com/mravaloarison/wallet/blob/main/README.md",
-	},
-    {
         title: "Green",
         description:
             "An iOS app built to reduce traffic emissions by helping drivers find routes with minimal stops as possible. It analyzes current traffic for a route and dynamically recommends routes that avoid traffic hotspots, ensuring drivers spend less time in traffic even though, now the travel time has increased.",
@@ -94,6 +41,24 @@ export const projects = [
 			"/green5.jpg",
 		],
 		githubLink: "https://github.com/mravaloarison/Green/blob/main/README.md"
+    },
+	{
+        title: "CatCulus",
+        description:
+            "A Pygame inspired by Google Magic Cat academy third edition. The design and game logic were primarily inspired by reverse engineering the Google Cat Academy Third edition.",
+        year: "October 2024",
+        technologies: [
+            "Pygame",
+            "OpenCV",
+            "MediaPipe",
+            "Gemini API",
+        ],
+		screenshots: [
+			"/cat-culus.png",
+			"/cat-culus2.png",
+			"/cat-culus3.png",
+		],
+		githubLink: "https://github.com/mravaloarison/cat-culus/blob/main/README.md"
     },
 	{
         title: "Slay Interview",
@@ -119,6 +84,7 @@ export const projects = [
 		],
 		githubLink: "https://github.com/mravaloarison/IT-something/blob/main/README.md"
     },
+
 	{
 		title: "GeneReel",
 		description:
@@ -126,13 +92,48 @@ export const projects = [
 		technologies: ["Adobe", "Giphy API", "Flask", "Gemini API"],
 		year: "November 2024",
 		screenshots: [
-			"GeneReel.png",
-			"GeneReel2.png",
-			"GeneReel3.png",
-			"GeneReel4.png",
+			"/GeneReel.png",
+			"/GeneReel2.png",
+			"/GeneReel3.png",
+			"/GeneReel4.png",
 		],
 		githubLink: "https://github.com/mravaloarison/GeneReel/blob/main/README.md",
-	}
+	},
+	{
+        title: "Flappy x ML",
+        description:
+            "Flappy Bird using face detection to control the bird.",
+        year: "September 2024",
+        technologies: [
+            "Javascript",
+            "MediaPipe",
+            "Face detection",
+        ],
+		screenshots: [
+			"/Flappy-x-ML.PNG",
+			"/Flappy-x-ML2.PNG",
+			"/Flappy-x-ML3.PNG",
+		],
+		githubLink: "https://github.com/mravaloarison/Flappy-x-ML/blob/main/README.md"
+    },
+	{
+		title: "Wallet",
+		description:
+			"This is my first corss platform app, a simple .NET MAUI application that checks if a credit card number is valid and identifies its type (Visa, MasterCard, Amex or Unknown), originally a project for C from Harvard CS50x.",
+		technologies: ["Visual Studio", ".NET Maui", "C#"],
+		year: "2022",
+		screenshots: [
+			"/maui.png",
+			"/maui1.png",
+			"/maui2.png",
+			"/maui3.png",
+			"/maui4.png",
+			"/maui5.png",
+			"/maui6.png",
+			"/maui7.png",
+		],
+		githubLink: "https://github.com/mravaloarison/wallet/blob/main/README.md",
+	},
 ];
 
 export const technologies = [
