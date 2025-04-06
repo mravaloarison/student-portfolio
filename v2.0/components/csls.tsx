@@ -114,9 +114,9 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 	return (
 		<div
 			ref={carouselRef}
-			className="relative w-full mx-auto max-w-lg overflow-hidden rounded-2xl shadow-lg"
+			className="relative w-full mx-auto max-w-lg overflow-hidden rounded-2xl"
 		>
-			<div className="relative min-h-96 bg-gray-900">
+			<div className="relative min-h-96 bg-gray-100">
 				{pictureLinks.map((src, index) => (
 					<div
 						key={index}
