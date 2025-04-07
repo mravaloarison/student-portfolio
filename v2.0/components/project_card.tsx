@@ -23,22 +23,12 @@ export default function ProjectCard({
 	screenshots: string[];
 	githubLink: string;
 }) {
-	const newTechnologies = () => {
-		const techs: Technology[] = [];
-		technologies.map((tech) => {
-			ts.map((t) => {
-				if (t === tech.name) {
-					techs.push(tech);
-				}
-			});
-		});
-
-		return techs;
+	const newTechnologies = (): Technology[] => {
+		return technologies.filter((tech) => ts.includes(tech.name));
 	};
 
 	function goToAProject(githubLink: string) {
 		gsap.to(".main", { x: 0.2, duration: 0.2, opacity: 0 });
-
 		setTimeout(() => {
 			window.location.href = `/project?repo=${githubLink}`;
 		}, 200);
@@ -46,7 +36,7 @@ export default function ProjectCard({
 
 	return (
 		<div className="flex flex-col gap-6">
-			<div className="">
+			<div>
 				<ImageCarousel
 					pictureLinks={screenshots}
 					pictureAlts={screenshots}
@@ -54,17 +44,19 @@ export default function ProjectCard({
 					interval={5000}
 				/>
 			</div>
-			<div className="flex flex-col gap-4 ">
+
+			<div className="flex flex-col gap-4">
 				<button
 					onClick={() => goToAProject(githubLink)}
-					className="flex items-center gap-2"
+					className="flex items-center gap-2 group"
 				>
-					<h1 className="text-2xl font-semibold hover:cursor-pointer text-black">
+					<h1 className="text-2xl font-semibold text-black group-hover:underline">
 						{title}
 					</h1>
 					<Link2 className="text-black" />
 				</button>
-				<p className="text-lg font-semibold text-gray-500 overflow-hidden truncate">
+
+				<p className="text-lg text-gray-500 font-medium leading-snug truncate">
 					{description}
 				</p>
 
@@ -72,22 +64,25 @@ export default function ProjectCard({
 					{newTechnologies().map((tech) => (
 						<div
 							key={tech.name}
-							className="flex items-center gap-2 border border-gray-200 rounded-full px-2 py-1"
+							className="flex items-center gap-2 border border-gray-200 rounded-full px-3 py-1 bg-white shadow-sm"
 						>
 							<div className="w-6 overflow-hidden h-6">
 								<img
 									src={tech.icon}
 									alt={tech.name}
-									className="h-6 object-cover"
+									className="h-5 object-cover"
 								/>
 							</div>
-							<span className="text-sm font-semibold text-gray-500">
+							<span className="text-sm font-semibold text-gray-600">
 								{tech.name}
 							</span>
 						</div>
 					))}
 				</div>
-				<div className="font-semibold text-sm text-black">{year}</div>
+
+				<div className="text-sm text-gray-700 font-semibold">
+					{year}
+				</div>
 			</div>
 		</div>
 	);

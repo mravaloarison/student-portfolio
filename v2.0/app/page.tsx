@@ -16,22 +16,23 @@ export default function Home() {
 			{ x: 10, opacity: 0 },
 			{ x: 0, duration: 0.2, opacity: 1 }
 		);
-		const logos = gsap.utils.toArray(".logo");
-		gsap.from(logos, {
+
+		gsap.from(".logo", {
 			x: 10,
 			duration: 0.5,
 			stagger: 0.1,
 			opacity: 0,
 			ease: "power2.inOut",
 		});
-		const intros = gsap.utils.toArray(".intro");
-		gsap.from(intros, {
+
+		gsap.from(".intro", {
 			x: 10,
 			duration: 0.5,
 			stagger: 0.1,
 			opacity: 0,
 			ease: "power2.inOut",
 		});
+
 		gsap.from(".projects", {
 			x: 10,
 			duration: 0.3,
@@ -42,31 +43,28 @@ export default function Home() {
 
 	function leavePage() {
 		gsap.to(".main", { x: 0.2, duration: 0.2, opacity: 0 });
-
 		setTimeout(() => {
 			window.location.href = "/about_me";
 		}, 200);
 	}
 
 	return (
-		<div className="main w-full max-w-screen mx-auto min-h-screen opacity-0 p-8 xl:p-12 bg-white">
-			<div className="flex flex-col gap-8 xl:gap-12">
+		<div className="main w-full max-w-screen mx-auto min-h-screen opacity-0 p-8 xl:p-12 bg-white font-sans">
+			<div className="flex flex-col gap-12">
 				<nav className="max-w-7xl mx-auto w-full">
 					<div className="flex justify-between items-center">
-						<div className="w-full">
-							<div className="w-14 h-14 xl:w-20 xl:h-20 border border-gray-200 rounded-full p-1 logo">
-								<img
-									src="/IMG_6917.jpeg"
-									alt="Logo"
-									className="w-full h-full rounded-full object-scale-down"
-								/>
-							</div>
+						<div className="logo w-14 h-14 xl:w-20 xl:h-20 border border-gray-200 rounded-full p-1">
+							<img
+								src="/IMG_6917.jpeg"
+								alt="Logo"
+								className="w-full h-full rounded-full object-scale-down"
+							/>
 						</div>
-						<div className="w-full flex items-end justify-end gap-6">
+						<div className="flex items-center gap-4 xl:gap-6">
 							{SocialMediaLinks.map((SM) => (
 								<div
 									key={SM.name}
-									className="w-10 h-10 xl:w-14 xl:h-14 border border-gray-200 rounded-full p-1 logo hover:shadow-lg gorup transition-transform"
+									className="logo w-10 h-10 xl:w-14 xl:h-14 border border-gray-200 rounded-full p-1 hover:shadow-lg transition-transform"
 								>
 									<SocialMediaView
 										mediaName={SM.name}
@@ -79,49 +77,41 @@ export default function Home() {
 					</div>
 				</nav>
 
-				<div className="text-xl xl:text-2xl font-semibold max-w-7xl mx-auto w-full text-gray-500">
-					<p
-						className="intro overflow-hidden text-ellipsis whitespace-pre-wrap"
-						style={{
-							display: "-webkit-box",
-							WebkitBoxOrient: "vertical",
-							WebkitLineClamp: 3,
-						}}
-					>
-						I am Rava, a recent graduate with a major in Computer
-						Information Systems and a minor in Mathematics.
-						Originally from{" "}
-						<span className="text-black hover:underline">
-							<Link
-								href="https://en.wikipedia.org/wiki/Madagascar"
-								target="_blank"
-							>
-								Madagascar
-							</Link>
+				<section className="max-w-7xl mx-auto w-full text-gray-600 text-xl xl:text-2xl font-medium leading-relaxed">
+					<p className="intro">
+						My name is Rava. I recently graduated with a major in{" "}
+						<span className="font-semibold text-black">
+							Computer Information Systems
 						</span>{" "}
-						, I studied in New York City for the last four years
-						with a lot of passion for technology and as a{" "}
-						<span className="text-black">
-							self-taught developer
+						and a minor in{" "}
+						<span className="font-semibold text-black">
+							Mathematics
 						</span>
-						. I love learning new things and I am always looking for
-						new opportunities to grow.
+						. I'm originally from{" "}
+						<Link
+							href="https://en.wikipedia.org/wiki/Madagascar"
+							target="_blank"
+							className="text-indigo-600 underline"
+						>
+							Madagascar
+						</Link>
+						, where I had no coding background and where English
+						wasn't even my second language.
 					</p>
 					<button
 						onClick={leavePage}
-						className="text-indigo-400 flex gap-2 items-center pt-8 xl:pt-12 intro hover:cursor-pointer"
+						className="text-indigo-500 flex gap-2 items-center pt-8 xl:pt-12 intro hover:underline"
 					>
 						Read more
 						<Link2 />
 					</button>
-				</div>
+				</section>
 
-				<div className="max-w-7xl mx-auto w-full flex flex-col gap-8 xl:gap-12 projects">
+				{/* Projects Section */}
+				<section className="max-w-7xl mx-auto w-full flex flex-col gap-10 projects">
 					<Divider />
-					<div className="text-3xl font-semibold text-black">
-						Projects
-					</div>
-					<div className="flex flex-col xl:grid grid-cols-2 gap-12">
+					<h2 className="text-3xl font-bold text-black">Projects</h2>
+					<div className="grid grid-cols-1 xl:grid-cols-3 gap-12">
 						{projects.map((project) => (
 							<ProjectCard
 								key={project.title}
@@ -134,14 +124,12 @@ export default function Home() {
 							/>
 						))}
 					</div>
-				</div>
+				</section>
 
 				<footer className="max-w-7xl mx-auto w-full">
 					<Divider />
-					<div className="flex items-center pt-8 xl:pt-12">
-						<div className="text-xs text-gray-500 text-center">
-							© 2025 by Rava
-						</div>
+					<div className="text-center text-xs text-gray-400 pt-8 xl:pt-12">
+						© 2025 by Rava
 					</div>
 				</footer>
 			</div>

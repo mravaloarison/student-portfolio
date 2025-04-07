@@ -30,7 +30,6 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 
 	const animateSlide = (newIndex: number, dir: "next" | "prev") => {
 		if (isAnimating || newIndex === currentIndex) return;
-
 		setIsAnimating(true);
 		setPrevIndex(currentIndex);
 		setCurrentIndex(newIndex);
@@ -39,7 +38,6 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 
 	useEffect(() => {
 		if (slidesRef.current.length === 0) return;
-
 		const currentSlide = slidesRef.current[currentIndex];
 		const prevSlide = slidesRef.current[prevIndex];
 
@@ -54,9 +52,7 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 			scale: 0.8,
 		});
 
-		const tl = gsap.timeline({
-			onComplete: () => setIsAnimating(false),
-		});
+		const tl = gsap.timeline({ onComplete: () => setIsAnimating(false) });
 
 		tl.to(prevSlide, {
 			duration: 0.25,
@@ -81,8 +77,7 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 
 	const nextSlide = () => {
 		if (isAnimating) return;
-		const newIndex =
-			currentIndex === pictureLinks.length - 1 ? 0 : currentIndex + 1;
+		const newIndex = (currentIndex + 1) % pictureLinks.length;
 		animateSlide(newIndex, "next");
 	};
 
@@ -94,27 +89,23 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 	};
 
 	const goToSlide = (index: number) => {
-		if (isAnimating) return;
+		if (isAnimating || index === currentIndex) return;
 		const dir = index > currentIndex ? "next" : "prev";
 		animateSlide(index, dir);
 	};
 
 	useEffect(() => {
 		if (!autoPlay) return;
-
 		const slideInterval = setInterval(() => {
-			if (!isAnimating) {
-				nextSlide();
-			}
+			if (!isAnimating) nextSlide();
 		}, interval);
-
 		return () => clearInterval(slideInterval);
 	}, [autoPlay, interval, isAnimating, currentIndex]);
 
 	return (
 		<div
 			ref={carouselRef}
-			className="relative w-full mx-auto max-w-lg overflow-hidden rounded-2xl"
+			className="relative w-full overflow-hidden rounded-2xl"
 		>
 			<div className="relative min-h-96 bg-gray-100">
 				{pictureLinks.map((src, index) => (
