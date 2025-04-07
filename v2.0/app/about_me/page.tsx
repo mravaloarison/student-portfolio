@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import ImageScroller from "@/components/img_scroll";
+import { about_me_pics } from "../fakedb";
 
 export default function Page() {
 	useGSAP(() => {
@@ -38,34 +39,13 @@ export default function Page() {
 					Go back
 				</button>
 
-				<ImageScroller
-					images={[
-						"/winner.jpeg",
-						"/frenz.jpeg",
-						"/frenz13.jpeg",
-						"/frenz14.jpeg",
-						"/frenz15.jpeg",
-						"/frenz16.jpeg",
-						"/frenz3.jpeg",
-						"/frenz4.jpeg",
-						"/frenz5.jpeg",
-						"/frenz6.jpeg",
-						"/frenz7.jpeg",
-						"/frenz8.jpeg",
-						"/frenz2.jpeg",
-						"/frenz9.jpeg",
-						"/frenz10.jpeg",
-						"/frenz11.jpeg",
-						"/frenz12.jpeg",
-						"/frenz1.jpeg",
-					]}
-				/>
+				<ImageScroller images={about_me_pics} />
 
 				<h1 className="pt-8 text-2xl md:text-3xl font-bold text-black">
 					My Journey
 				</h1>
 				<p className="pt-4">
-					My name is Rava. I recently graduated with a major in{" "}
+					My name is Rava. I will soon be graduating with a major in{" "}
 					<span className="font-semibold text-black">
 						Computer Information Systems
 					</span>{" "}

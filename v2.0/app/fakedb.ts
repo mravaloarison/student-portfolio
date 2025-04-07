@@ -274,3 +274,24 @@ export const technologies = [
 		icon: "https://img.icons8.com/?size=100&id=nCj4PvnCO0tZ&format=png&color=000000",
 	},
 ]
+
+export const about_me_pics = [
+	"/winner.jpeg",
+	"/frenz.jpeg",
+	"/frenz13.jpeg",
+	"/frenz14.jpeg",
+	"/frenz15.jpeg",
+	"/frenz16.jpeg",
+	"/frenz3.jpeg",
+	"/frenz4.jpeg",
+	"/frenz5.jpeg",
+	"/frenz6.jpeg",
+	"/frenz7.jpeg",
+	"/frenz8.jpeg",
+	"/frenz2.jpeg",
+	"/frenz9.jpeg",
+	"/frenz10.jpeg",
+	"/frenz11.jpeg",
+	"/frenz12.jpeg",
+	"/frenz1.jpeg",
+]
