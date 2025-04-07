@@ -79,7 +79,8 @@ export default function Home() {
 
 				<section className="max-w-7xl mx-auto w-full text-gray-600 text-xl xl:text-2xl font-medium leading-relaxed">
 					<p className="intro">
-						My name is Rava. I recently graduated with a major in{" "}
+						My name is Rava. I will soon be graduating with a major
+						in{" "}
 						<span className="font-semibold text-black">
 							Computer Information Systems
 						</span>{" "}
