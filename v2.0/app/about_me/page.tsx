@@ -33,17 +33,16 @@ export default function Page() {
 			<div className="p-8 md:p-12 max-w-7xl w-full mx-auto text-lg md:text-xl text-gray-700 leading-relaxed">
 				<button
 					onClick={goBack}
-					className="text-indigo-500 flex gap-2 mb-8 items-center text-xl md:text-2xl font-semibold hover:cursor-pointer"
+					className="text-indigo-500 flex gap-2 items-center text-xl md:text-2xl font-semibold hover:cursor-pointer"
 				>
 					<ArrowLeft />
 					Go back
 				</button>
 
-				<ImageScroller images={about_me_pics} />
-
 				<h1 className="pt-8 text-2xl md:text-3xl font-bold text-black">
 					My Journey
 				</h1>
+
 				<p className="pt-4">
 					My name is Rava. I will soon be graduating with a major in{" "}
 					<span className="font-semibold text-black">
@@ -64,10 +63,12 @@ export default function Page() {
 					, where I had no coding background and where English wasn't
 					even my second language.
 				</p>
-				<p className="pt-4">
+				<p className="pt-4 pb-8">
 					I wasn’t born into tech — I pursued it out of curiosity,
 					passion, and pure determination.
 				</p>
+
+				<ImageScroller images={about_me_pics} />
 
 				<h2 className="pt-10 text-xl md:text-2xl font-bold text-black">
 					Why I Do What I Do
@@ -125,8 +126,8 @@ export default function Page() {
 					and ambitions.
 				</p>
 				<p className="pt-4">
-					I have also met a lot of people and I find it exciting to
-					know that someday, I'll be able to say I have{" "}
+					I find it exciting to know that someday, I'll be able to say
+					I have{" "}
 					<span className="text-black font-bold">
 						friends from all over the world
 					</span>
