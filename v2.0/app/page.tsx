@@ -8,8 +8,11 @@ import SocialMediaView from "@/components/social_medias";
 import Link from "next/link";
 import ProjectCard from "@/components/project_card";
 import { Link2 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+	const router = useRouter();
+
 	useGSAP(() => {
 		gsap.fromTo(
 			".main",
@@ -44,7 +47,8 @@ export default function Home() {
 	function leavePage() {
 		gsap.to(".main", { x: 0.2, duration: 0.2, opacity: 0 });
 		setTimeout(() => {
-			window.location.href = "/about_me";
+			// window.location.href = "/about_me";
+			router.push("/about_me");
 		}, 200);
 	}
 

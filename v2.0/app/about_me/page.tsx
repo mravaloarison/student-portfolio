@@ -6,8 +6,11 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { about_me_pics } from "../fakedb";
 import ImageCarousel from "@/components/csls";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+	const router = useRouter();
+
 	useGSAP(() => {
 		gsap.fromTo(
 			".main",
@@ -24,7 +27,7 @@ export default function Page() {
 		});
 
 		setTimeout(() => {
-			window.location.href = "/";
+			router.back();
 		}, 200);
 	}
 
