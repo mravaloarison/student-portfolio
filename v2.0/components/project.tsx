@@ -10,10 +10,13 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import "github-markdown-css/github-markdown.css";
 import "highlight.js/styles/github.css";
+import { useRouter } from "next/navigation";
 
 export default function ProjectPage() {
 	const [readme, setReadme] = useState<string | null>(null);
 	const searchParams = useSearchParams();
+
+	const router = useRouter();
 
 	useGSAP(() => {
 		gsap.fromTo(
@@ -30,7 +33,8 @@ export default function ProjectPage() {
 			opacity: 0,
 		});
 		setTimeout(() => {
-			window.location.href = "/";
+			// window.location.href = "/";
+			router.back();
 		}, 200);
 	}
 
