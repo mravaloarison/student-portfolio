@@ -25,7 +25,7 @@ export const projects = [
 	{
 		title: "FitFinder",
 		description:
-        "FitFinder is a personal project built to explore and experiment with Google's ecosystem — including Firebase Auth, Firestore, Gemini AI, and Google Places API. It's a fashion-focused delivery web app where users can browse local stores, view their inventories, and chat with an AI stylist for outfit suggestions. This app serves as a sandbox to integrate and test multiple Google products in a full-stack web application.",
+        "https://developers.google.com/static/maps/images/maps-icon.svgBuilt it to explore and experiment with Google's ecosystem — including Firebase Auth, Firestore, Gemini AI, and Google Places API.",
 		year: "April 2025",
 		technologies: [
 			"Firebase Auth",
