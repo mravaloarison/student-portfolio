@@ -273,10 +273,6 @@ export const technologies = [
 		icon: "https://img.icons8.com/?size=100&id=fpGM2cINbbu4&format=png&color=000000",
 	},
 	{
-		name: "Google Maps API",
-		icon: "https://img.icons8.com/?size=100&id=y9LJ0mNaH6XG&format=png&color=000000",
-	},
-	{
 		name: "Typescript",
 		icon: "https://img.icons8.com/?size=100&id=nCj4PvnCO0tZ&format=png&color=000000",
 	},
