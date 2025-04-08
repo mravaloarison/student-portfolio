@@ -37,13 +37,15 @@ export const projects = [
 		],
 		screenshots: [
 			"/fitfinder.png",
+			"/fitfinder7.png",
 			"/fitfinder1.png",
 			"/fitfinder2.png",
+			"/fitfinder9.png",
+			"/fitfinder10.png",
 			"/fitfinder3.png",
 			"/fitfinder4.png",
 			"/fitfinder5.png",
 			"/fitfinder6.png",
-			"/fitfinder7.png",
 			"/fitfinder8.png",
 		],
 		githubLink: "https://github.com/mravaloarison/IT-495/blob/main/do_not_touch/README.md"
