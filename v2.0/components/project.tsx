@@ -20,14 +20,14 @@ export default function ProjectPage() {
 
 	useGSAP(() => {
 		gsap.fromTo(
-			".main",
+			".project-main",
 			{ x: 10, opacity: 0 },
 			{ x: 0, duration: 0.2, opacity: 1 }
 		);
 	}, []);
 
 	function goBack() {
-		gsap.to(".main", {
+		gsap.to(".project-main", {
 			x: -10,
 			duration: 0.2,
 			opacity: 0,
@@ -77,7 +77,7 @@ export default function ProjectPage() {
 	}, [searchParams]);
 
 	return (
-		<div className="main w-screen min-h-screen flex flex-col xl:items-center px-4 py-8 bg-white text-black font-sans leading-relaxed opacity-0 overflow-y-auto">
+		<div className="project-main w-screen min-h-screen flex flex-col xl:items-center px-4 py-8 bg-white text-black font-sans leading-relaxed opacity-0 overflow-y-auto">
 			<button
 				onClick={goBack}
 				className="text-indigo-500 flex gap-2 items-center text-xl md:text-2xl font-semibold mb-6 hover:underline"
