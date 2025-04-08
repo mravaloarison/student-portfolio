@@ -23,6 +23,32 @@ export const SocialMediaLinks = [
 
 export const projects = [
 	{
+		title: "FitFinder",
+		description:
+        "FitFinder is a personal project built to explore and experiment with Google's ecosystem — including Firebase Auth, Firestore, Gemini AI, and Google Places API. It's a fashion-focused delivery web app where users can browse local stores, view their inventories, and chat with an AI stylist for outfit suggestions. This app serves as a sandbox to integrate and test multiple Google products in a full-stack web application.",
+		year: "April 2025",
+		technologies: [
+			"Next.js",
+			"Firebase Auth",
+			"Firestore",
+			"Google Places API",
+			"Gemini AI",
+			"TailwindCSS",
+		],
+		screenshots: [
+			"/fitfinder.png",
+			"/fitfinder1.png",
+			"/fitfinder2.png",
+			"/fitfinder3.png",
+			"/fitfinder4.png",
+			"/fitfinder5.png",
+			"/fitfinder6.png",
+			"/fitfinder7.png",
+			"/fitfinder8.png",
+		],
+		githubLink: "https://github.com/mravaloarison/IT-495/blob/main/do_not_touch/README.md"
+	},
+	{
         title: "Green",
         description:
             "An iOS app built to reduce traffic emissions by helping drivers find routes with minimal stops as possible. It analyzes current traffic for a route and dynamically recommends routes that avoid traffic hotspots, ensuring drivers spend less time in traffic even though, now the travel time has increased.",
@@ -73,30 +99,30 @@ export const projects = [
 		],
 		githubLink: "https://github.com/mravaloarison/GeneReel/blob/main/README.md",
 	},
-	{
-        title: "Slay Interview",
-        description: 
-            "An easy way to practice your interview skills. A platform for users to prepare for technical interviews.",
-        year: "January 2023",
-        technologies: [
-            "Amplify by AWS",
-            "Next.js",
-            "Gemini API",
-            "Firebase Auth",
-            "Firestore",
-            "Speech recognition",
-        ],
-		screenshots: [
-			"/slayinterview.png",
-			"/slayinterview1.png",
-			"/slayinterview2.png",
-			"/slayinterview3.png",
-			"/slayinterview4.png",
-			"/slayinterview5.png",
-			"/slayinterview6.png",
-		],
-		githubLink: "https://github.com/mravaloarison/IT-something/blob/main/README.md"
-    },
+	// {
+    //     title: "Slay Interview",
+    //     description: 
+    //         "An easy way to practice your interview skills. A platform for users to prepare for technical interviews.",
+    //     year: "January 2023",
+    //     technologies: [
+    //         "Amplify by AWS",
+    //         "Next.js",
+    //         "Gemini API",
+    //         "Firebase Auth",
+    //         "Firestore",
+    //         "Speech recognition",
+    //     ],
+	// 	screenshots: [
+	// 		"/slayinterview.png",
+	// 		"/slayinterview1.png",
+	// 		"/slayinterview2.png",
+	// 		"/slayinterview3.png",
+	// 		"/slayinterview4.png",
+	// 		"/slayinterview5.png",
+	// 		"/slayinterview6.png",
+	// 	],
+	// 	githubLink: "https://github.com/mravaloarison/IT-something/blob/main/README.md"
+    // },
 	{
         title: "CatCulus",
         description:
