@@ -28,12 +28,11 @@ export const projects = [
         "FitFinder is a personal project built to explore and experiment with Google's ecosystem — including Firebase Auth, Firestore, Gemini AI, and Google Places API. It's a fashion-focused delivery web app where users can browse local stores, view their inventories, and chat with an AI stylist for outfit suggestions. This app serves as a sandbox to integrate and test multiple Google products in a full-stack web application.",
 		year: "April 2025",
 		technologies: [
-			"Next.js",
 			"Firebase Auth",
 			"Firestore",
-			"Google Places API",
-			"Gemini AI",
-			"TailwindCSS",
+			"Gemini API",
+			"Google Maps API",
+			"Typescript",
 		],
 		screenshots: [
 			"/FitFinder.png",
@@ -101,30 +100,6 @@ export const projects = [
 		],
 		githubLink: "https://github.com/mravaloarison/GeneReel/blob/main/README.md",
 	},
-	// {
-    //     title: "Slay Interview",
-    //     description: 
-    //         "An easy way to practice your interview skills. A platform for users to prepare for technical interviews.",
-    //     year: "January 2023",
-    //     technologies: [
-    //         "Amplify by AWS",
-    //         "Next.js",
-    //         "Gemini API",
-    //         "Firebase Auth",
-    //         "Firestore",
-    //         "Speech recognition",
-    //     ],
-	// 	screenshots: [
-	// 		"/slayinterview.png",
-	// 		"/slayinterview1.png",
-	// 		"/slayinterview2.png",
-	// 		"/slayinterview3.png",
-	// 		"/slayinterview4.png",
-	// 		"/slayinterview5.png",
-	// 		"/slayinterview6.png",
-	// 	],
-	// 	githubLink: "https://github.com/mravaloarison/IT-something/blob/main/README.md"
-    // },
 	{
         title: "CatCulus",
         description:
@@ -165,6 +140,10 @@ export const projects = [
 ];
 
 export const technologies = [
+	{
+		name: "Google Maps API",
+		icon: "https://developers.google.com/static/maps/images/maps-icon.svg"
+	},
     {
         name: "Face detection",
         icon: "https://img.icons8.com/?size=100&id=62053&format=png&color=000000"
