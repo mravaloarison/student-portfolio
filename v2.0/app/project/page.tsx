@@ -1,5 +1,9 @@
-import React, { Suspense } from "react";
-import ProjectPage from "@/components/project";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const ProjectPage = dynamic(() => import("@/components/project"), {
+	ssr: false,
+});
 
 export default function Page() {
 	return (
