@@ -53,7 +53,7 @@ export default function Home() {
 	}
 
 	return (
-		<div className="main w-full max-w-screen mx-auto min-h-screen p-8 xl:p-12 bg-white font-sans">
+		<div className="main w-full max-w-screen mx-auto min-h-screen p-8 xl:p-12 bg-white font-sans opacity-0">
 			<div className="flex flex-col gap-12">
 				<nav className="max-w-7xl mx-auto w-full">
 					<div className="flex justify-between items-center">
