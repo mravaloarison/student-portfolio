@@ -2,6 +2,7 @@ import { technologies } from "@/app/fakedb";
 import ImageCarousel from "./csls";
 import { Link2 } from "lucide-react";
 import gsap from "gsap";
+import { useRouter } from "next/navigation";
 
 interface Technology {
 	name: string;
@@ -23,14 +24,18 @@ export default function ProjectCard({
 	screenshots: string[];
 	githubLink: string;
 }) {
+	const router = useRouter();
+
 	const newTechnologies = (): Technology[] => {
 		return technologies.filter((tech) => ts.includes(tech.name));
 	};
 
 	function goToAProject(githubLink: string) {
 		gsap.to(".main", { x: 0.2, duration: 0.2, opacity: 0 });
+
 		setTimeout(() => {
-			window.location.href = `/project?repo=${githubLink}`;
+			// window.location.href = `/project?repo=${githubLink}`;
+			router.push(`/project?repo=${githubLink}`);
 		}, 200);
 	}
 
