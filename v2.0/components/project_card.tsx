@@ -129,13 +129,13 @@ export default function ProjectCard({
 					</a>
 				)}
 
-				<div className="flex flex-wrap gap-2">
+				<div className="flex flex-wrap gap-2.5">
 					{newTechnologies().map((tech) => (
 						<div
 							key={tech.name}
 							className="flex items-center gap-2 border border-gray-200 rounded-full px-3 py-1 bg-white shadow-sm"
 						>
-							<div className="w-6 overflow-hidden h-6">
+							<div className="w-6 overflow-hidden flex items-center justify-center">
 								<img
 									src={tech.icon}
 									alt={tech.name}
