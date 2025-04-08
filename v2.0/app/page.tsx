@@ -9,12 +9,17 @@ import Link from "next/link";
 import ProjectCard from "@/components/project_card";
 import { Link2 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
 	const router = useRouter();
 
 	useGSAP(() => {
-		gsap.from(".main", { x: 10, opacity: 0, duration: 0.2 });
+		gsap.fromTo(
+			".main",
+			{ x: 10, opacity: 0 },
+			{ x: 0, duration: 0.2, opacity: 1 }
+		);
 
 		gsap.from(".logo", {
 			x: 10,
@@ -40,6 +45,13 @@ export default function Home() {
 		});
 	}, []);
 
+	useEffect(() => {
+		const el = document.querySelector(".main");
+		if (el) {
+			el.classList.remove("opacity-0");
+		}
+	}, []);
+
 	function leavePage() {
 		gsap.to(".main", { x: 0.2, duration: 0.2, opacity: 0 });
 		setTimeout(() => {
@@ -49,7 +61,7 @@ export default function Home() {
 	}
 
 	return (
-		<div className="main w-full max-w-screen mx-auto min-h-screen p-8 xl:p-12 bg-white font-sans opacity-100">
+		<div className="main w-full max-w-screen mx-auto min-h-screen p-8 xl:p-12 bg-white font-sans opacity-0">
 			<div className="flex flex-col gap-12">
 				<nav className="max-w-7xl mx-auto w-full">
 					<div className="flex justify-between items-center">
