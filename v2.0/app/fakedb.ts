@@ -25,7 +25,7 @@ export const projects = [
 	{
 		title: "FitFinder",
 		description:
-        "https://developers.google.com/static/maps/images/maps-icon.svgBuilt it to explore and experiment with Google's ecosystem — including Firebase Auth, Firestore, Gemini AI, and Google Places API.",
+		"Built it to explore and experiment with Google's ecosystem — including Firebase Auth, Firestore, Gemini AI, and Google Places API.",
 		year: "April 2025",
 		technologies: [
 			"Firebase Auth",
@@ -70,6 +70,20 @@ export const projects = [
 		githubLink: "https://github.com/mravaloarison/Green/blob/main/README.md"
     },
 	{
+		title: "GeneReel",
+		description:
+			"An Adobe add-on that helps content creators build Reels and Shorts faster based on prompt.  Built under 24 hours at Yale University",
+		technologies: ["Adobe", "Giphy API", "Flask", "Gemini API", "Python"],
+		year: "November 2024",
+		screenshots: [
+			"/Genereel.png",
+			"/Genereel2.png",
+			"/Genereel3.png",
+			"/Genereel4.png",
+		],
+		githubLink: "https://github.com/mravaloarison/GeneReel/blob/main/README.md",
+	},
+	{
         title: "Flappy x ML",
         description:
             "Flappy Bird using face detection to control the bird.",
@@ -86,20 +100,7 @@ export const projects = [
 		],
 		githubLink: "https://github.com/mravaloarison/Flappy-x-ML/blob/main/README.md"
     },
-	{
-		title: "GeneReel",
-		description:
-			"An Adobe add-on that helps content creators build Reels and Shorts faster based on prompt.  Built under 24 hours at Yale University",
-		technologies: ["Adobe", "Giphy API", "Flask", "Gemini API"],
-		year: "November 2024",
-		screenshots: [
-			"/Genereel.png",
-			"/Genereel2.png",
-			"/Genereel3.png",
-			"/Genereel4.png",
-		],
-		githubLink: "https://github.com/mravaloarison/GeneReel/blob/main/README.md",
-	},
+	
 	{
         title: "CatCulus",
         description:
@@ -110,6 +111,7 @@ export const projects = [
             "OpenCV",
             "MediaPipe",
             "Gemini API",
+			"Python",
         ],
 		screenshots: [
 			"/cat-culus.png",

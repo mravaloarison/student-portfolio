@@ -4,8 +4,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import ImageScroller from "@/components/img_scroll";
 import { about_me_pics } from "../fakedb";
+import ImageCarousel from "@/components/csls";
 
 export default function Page() {
 	useGSAP(() => {
@@ -68,7 +68,13 @@ export default function Page() {
 					passion, and pure determination.
 				</p>
 
-				<ImageScroller images={about_me_pics} />
+				<ImageCarousel
+					pictureLinks={about_me_pics}
+					pictureAlts={about_me_pics}
+					autoPlay={true}
+					interval={2400}
+					isAboutPage={true}
+				/>
 
 				<h2 className="pt-10 text-xl md:text-2xl font-bold text-black">
 					Why I Do What I Do

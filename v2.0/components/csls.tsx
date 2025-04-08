@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 import { gsap } from "gsap";
 
 interface CarouselProps {
@@ -7,6 +7,7 @@ interface CarouselProps {
 	pictureAlts: string[];
 	autoPlay?: boolean;
 	interval?: number;
+	isAboutPage?: boolean;
 }
 
 const ImageCarousel: React.FC<CarouselProps> = ({
@@ -14,11 +15,14 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 	pictureAlts,
 	autoPlay = true,
 	interval = 5000,
+	isAboutPage = false,
 }) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [prevIndex, setPrevIndex] = useState(0);
 	const [direction, setDirection] = useState<"next" | "prev">("next");
 	const [isAnimating, setIsAnimating] = useState(false);
+	const [isPlaying, setIsPlaying] = useState(autoPlay);
+
 	const carouselRef = useRef<HTMLDivElement>(null);
 	const slidesRef = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -95,19 +99,36 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 	};
 
 	useEffect(() => {
-		if (!autoPlay) return;
+		if (!isPlaying) return;
+
 		const slideInterval = setInterval(() => {
 			if (!isAnimating) nextSlide();
 		}, interval);
+
 		return () => clearInterval(slideInterval);
-	}, [autoPlay, interval, isAnimating, currentIndex]);
+	}, [isPlaying, interval, isAnimating, currentIndex]);
+
+	const togglePlay = () => {
+		setIsPlaying((prev) => !prev);
+	};
+
+	const heightClasses = isAboutPage ? "min-h-96 lg:min-h-[66vh]" : "min-h-96";
 
 	return (
 		<div
 			ref={carouselRef}
 			className="relative w-full overflow-hidden rounded-2xl"
 		>
-			<div className="relative min-h-96 bg-gray-100">
+			<div className={`relative ${heightClasses} bg-gray-100`}>
+				{isAboutPage && (
+					<button
+						onClick={togglePlay}
+						className="absolute left-4 top-10 transform -translate-y-1/2 bg-black/10 hover:bg-black/30 text-white rounded-full p-2 shadow-md z-10"
+					>
+						{isPlaying ? <Pause /> : <Play />}
+					</button>
+				)}
+
 				{pictureLinks.map((src, index) => (
 					<div
 						key={index}
@@ -133,7 +154,7 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 				<button
 					onClick={prevSlide}
 					disabled={isAnimating}
-					className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-white/30 text-white hover:text-black p-3 rounded-full transition-all duration-300 transform hover:scale-110 disabled:opacity-50"
+					className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/10 hover:bg-black/30 text-white rounded-full p-2 shadow-md z-10"
 					aria-label="Previous slide"
 				>
 					<ChevronLeft size={24} />
@@ -142,7 +163,7 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 				<button
 					onClick={nextSlide}
 					disabled={isAnimating}
-					className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-white/30 text-white hover:text-black p-3 rounded-full transition-all duration-300 transform hover:scale-110 disabled:opacity-50"
+					className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/10 hover:bg-black/30 text-white rounded-full p-2 shadow-md z-10"
 					aria-label="Next slide"
 				>
 					<ChevronRight size={24} />
