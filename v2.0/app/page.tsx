@@ -14,11 +14,7 @@ export default function Home() {
 	const router = useRouter();
 
 	useGSAP(() => {
-		gsap.fromTo(
-			".main",
-			{ x: 10, opacity: 0 },
-			{ x: 0, duration: 0.2, opacity: 1 }
-		);
+		gsap.from(".main", { x: 10, opacity: 0, duration: 0.2 });
 
 		gsap.from(".logo", {
 			x: 10,
@@ -53,7 +49,7 @@ export default function Home() {
 	}
 
 	return (
-		<div className="main w-full max-w-screen mx-auto min-h-screen p-8 xl:p-12 bg-white font-sans opacity-0">
+		<div className="main w-full max-w-screen mx-auto min-h-screen p-8 xl:p-12 bg-white font-sans opacity-100">
 			<div className="flex flex-col gap-12">
 				<nav className="max-w-7xl mx-auto w-full">
 					<div className="flex justify-between items-center">
