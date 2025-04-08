@@ -1,12 +1,18 @@
 import { technologies } from "@/app/fakedb";
 import ImageCarousel from "./csls";
-import { Link2 } from "lucide-react";
+import { Link2, PlayCircle } from "lucide-react";
 import gsap from "gsap";
 import { useRouter } from "next/navigation";
 
 interface Technology {
 	name: string;
 	icon: string;
+}
+
+interface BadgeStyle {
+	text: string;
+	bg: string;
+	textColor: string;
 }
 
 export default function ProjectCard({
@@ -16,6 +22,8 @@ export default function ProjectCard({
 	ts,
 	screenshots,
 	githubLink,
+	liveLink,
+	note,
 }: {
 	title: string;
 	description: string;
@@ -23,6 +31,8 @@ export default function ProjectCard({
 	ts: string[];
 	screenshots: string[];
 	githubLink: string;
+	liveLink?: string;
+	note?: string;
 }) {
 	const router = useRouter();
 
@@ -32,12 +42,41 @@ export default function ProjectCard({
 
 	function goToAProject(githubLink: string) {
 		gsap.to(".main", { x: 0.2, duration: 0.2, opacity: 0 });
-
 		setTimeout(() => {
-			// window.location.href = `/project?repo=${githubLink}`;
 			router.push(`/project?repo=${githubLink}`);
 		}, 200);
 	}
+
+	const getNoteBadge = (note: string | undefined): BadgeStyle | null => {
+		if (!note) return null;
+
+		const badgeMap: Record<string, BadgeStyle> = {
+			a: {
+				text: "▶️ Available live",
+				bg: "bg-blue-100",
+				textColor: "text-blue-800",
+			},
+			h: {
+				text: "🏆 Hackathon Winner",
+				bg: "bg-yellow-100",
+				textColor: "text-yellow-800",
+			},
+			v: {
+				text: "👁️ Computer Vision",
+				bg: "bg-gray-200",
+				textColor: "text-gray-800",
+			},
+			f: {
+				text: "🐥 First Hack",
+				bg: "bg-indigo-100",
+				textColor: "text-indigo-800",
+			},
+		};
+
+		return badgeMap[note] || null;
+	};
+
+	const badge = getNoteBadge(note);
 
 	return (
 		<div className="flex flex-col gap-6">
@@ -51,19 +90,44 @@ export default function ProjectCard({
 			</div>
 
 			<div className="flex flex-col gap-4">
-				<button
-					onClick={() => goToAProject(githubLink)}
-					className="flex items-center gap-2 group"
-				>
-					<h1 className="text-2xl font-semibold text-black group-hover:underline">
-						{title}
-					</h1>
-					<Link2 className="text-black" />
-				</button>
+				<div className="flex items-center gap-2">
+					<button
+						onClick={() => goToAProject(githubLink)}
+						className="flex items-center gap-2 group"
+					>
+						<h1 className="text-2xl font-semibold text-black group-hover:underline">
+							{title}
+						</h1>
+						<Link2 className="text-black" />
+					</button>
+
+					{badge && (
+						<span
+							className={`text-xs ${badge.bg} ${badge.textColor} px-2 py-1 rounded-full font-medium`}
+						>
+							{badge.text}
+						</span>
+					)}
+				</div>
 
 				<p className="text-lg text-gray-500 font-medium leading-snug truncate">
 					{description}
 				</p>
+
+				{liveLink && (
+					<a
+						href={liveLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="flex gap-2 items-center w-fit text-sm font-semibold text-blue-500"
+					>
+						<div className="relative flex items-center justify-center">
+							<span className="absolute inline-flex h-5 w-5 animate-ping rounded-full bg-blue-400 opacity-75"></span>
+							<PlayCircle className="relative text-blue-600 w-5 h-5" />
+						</div>
+						Live Site
+					</a>
+				)}
 
 				<div className="flex flex-wrap gap-2">
 					{newTechnologies().map((tech) => (

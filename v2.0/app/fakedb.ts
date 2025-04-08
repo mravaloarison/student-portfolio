@@ -48,7 +48,9 @@ export const projects = [
 			"/FitFinder10.png",
 			
 		],
-		githubLink: "https://github.com/mravaloarison/IT-495/blob/main/do_not_touch/README.md"
+		githubLink: "https://github.com/mravaloarison/IT-495/blob/main/do_not_touch/README.md",
+		liveLink: "https://fit--finder.vercel.app/",
+		note: "a",
 	},
 	{
         title: "Green",
@@ -68,7 +70,8 @@ export const projects = [
 			"/green4.jpg",
 			"/green5.jpg",
 		],
-		githubLink: "https://github.com/mravaloarison/Green/blob/main/README.md"
+		githubLink: "https://github.com/mravaloarison/Green/blob/main/README.md",
+		note: "h",
     },
 	{
 		title: "GeneReel",
@@ -83,6 +86,7 @@ export const projects = [
 			"/Genereel4.png",
 		],
 		githubLink: "https://github.com/mravaloarison/GeneReel/blob/main/README.md",
+		note: "h",
 	},
 	{
         title: "Flappy x ML",
@@ -99,7 +103,8 @@ export const projects = [
 			"/Flappy-x-ML2.PNG",
 			"/Flappy-x-ML3.PNG",
 		],
-		githubLink: "https://github.com/mravaloarison/Flappy-x-ML/blob/main/README.md"
+		githubLink: "https://github.com/mravaloarison/Flappy-x-ML/blob/main/README.md",
+		note: "v",
     },
 	
 	{
@@ -119,7 +124,8 @@ export const projects = [
 			"/cat-culus2.png",
 			"/cat-culus3.png",
 		],
-		githubLink: "https://github.com/mravaloarison/cat-culus/blob/main/README.md"
+		githubLink: "https://github.com/mravaloarison/cat-culus/blob/main/README.md",
+		note: "v",
     },
 	
 	{
@@ -139,6 +145,7 @@ export const projects = [
 			"/maui3.png",
 		],
 		githubLink: "https://github.com/mravaloarison/wallet/blob/main/README.md",
+		note: "f",
 	},
 ];
 
