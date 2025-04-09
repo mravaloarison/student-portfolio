@@ -123,7 +123,7 @@ const ImageCarousel: React.FC<CarouselProps> = ({
 				{isAboutPage && (
 					<button
 						onClick={togglePlay}
-						className="absolute left-4 top-10 transform -translate-y-1/2 bg-black/10 hover:bg-black/30 text-white rounded-full p-2 shadow-md z-10"
+						className="absolute left-4 top-4 transform -translate-y-1/2 bg-black/10 hover:bg-black/30 text-white rounded-full p-2 shadow-md z-10"
 					>
 						{isPlaying ? <Pause /> : <Play />}
 					</button>
